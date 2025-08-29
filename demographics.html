@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demographics Served | Devine Housing Solutions</title>
+  <meta name="description" content="Devine Housing Solutions provides affordable housing in Columbia, SC for seniors, veterans, recovery, re-entry populations, low-income individuals, and people with special needs." />
+  <link rel="canonical" href="https://www.devinehousingsolutions.com/demographics.html" />
+  <meta name="theme-color" content="#2e7d32" />
+
+  <style>
+    :root {
+      --green: #2e7d32;
+      --gray-900: #1f2933;
+      --white: #fff;
+      --max: 1200px;
+    }
+    body { margin: 0; font-family: system-ui, sans-serif; color: var(--gray-900); line-height: 1.6; }
+    header { background: var(--white); border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 100; }
+    nav { max-width: var(--max); margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    nav a { margin-left: 1rem; color: var(--gray-900); text-decoration: none; font-weight: 600; }
+    nav a:hover { color: var(--green); }
+    .btn { background: var(--green); color: var(--white); padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; }
+    section { padding: 3rem 1rem; max-width: var(--max); margin: auto; }
+    h1, h2 { color: var(--green); }
+    .grid { display: grid; gap: 1.5rem; }
+    @media(min-width: 900px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: var(--white); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; }
+    footer { background: var(--gray-900); color: var(--white); padding: 2rem 1rem; text-align: center; }
+    footer a { color: #c7ffd1; text-decoration: none; }
+  </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Devine Housing Solutions",
+    "description":"Affordable housing provider in Columbia, SC offering housing for seniors, veterans, individuals in recovery, re-entry populations, low-income individuals, and people with special needs.",
+    "telephone":"+1-803-500-1901",
+    "email":"info@devinehousingsolutions.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"REPLACE_WITH_ADDRESS_LATER",
+      "addressLocality":"Columbia",
+      "addressRegion":"SC",
+      "postalCode":"REPLACE_ZIP",
+      "addressCountry":"US"
+    },
+    "url":"https://www.devinehousingsolutions.com/demographics.html"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Devine Housing Solutions</strong></div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="demographics.html">Demographics Served</a>
+        <a href="our-care.html">Our Care</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Demographics Served</h1>
+    <p>At Devine Housing Solutions, we proudly provide <strong>affordable housing</strong> and supportive living opportunities for individuals across Columbia, SC and the surrounding Midlands. Our programs focus on meeting the needs of diverse populations who require safe, stable, and dignified housing.</p>
+    
+    <div class="grid grid-2">
+      <div class="card">
+        <h2>Seniors (55+)</h2>
+        <p>Affordable, safe, and supportive housing designed specifically for seniors seeking stability and community.</p>
+      </div>
+      <div class="card">
+        <h2>Veterans</h2>
+        <p>Providing affordable housing for those who have served our country, with a focus on dignity and respect.</p>
+      </div>
+      <div class="card">
+        <h2>Recovery</h2>
+        <p>Housing solutions for men and women in recovery and sober living programs, promoting wellness and accountability.</p>
+      </div>
+      <div class="card">
+        <h2>Re-Entry Populations</h2>
+        <p>Safe, supportive housing for individuals transitioning from incarceration, helping them reintegrate successfully into the community.</p>
+      </div>
+      <div class="card">
+        <h2>Low-Income Individuals</h2>
+        <p>Affordable housing opportunities for those facing financial hardship, ensuring access to safe living environments.</p>
+      </div>
+      <div class="card">
+        <h2>Special Needs Residents</h2>
+        <p>Accessible housing options for individuals with disabilities and special needs, designed for comfort and inclusivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Devine Housing Solutions • Columbia, SC</p>
+    <p>
+      Phone: <a href="tel:18035001901">803-500-1901</a> • 
+      Email: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a>
+    </p>
+    <p>Address: REPLACE_WITH_ADDRESS_LATER</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
