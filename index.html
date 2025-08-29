@@ -3,80 +3,116 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Devine Housing Solutions | Affordable Housing Support in Columbia, SC</title>
-  <meta name="description" content="Devine Housing Solutions helps individuals, families, and providers with housing navigation, placement, and supportive services in Columbia, SC and nearby areas within an hour including Lexington, Irmo, Blythewood, West Columbia, Cayce, Forest Acres, Chapin, Elgin, Lugoff, Camden, Sumter, Newberry, Orangeburg, Winnsboro, and Aiken." />
+  <title>Devine Housing Solutions | Affordable Housing in Columbia, SC</title>
+  <meta name="description" content="Devine Housing Solutions provides affordable housing in Columbia, SC and nearby areas. Programs for seniors, veterans, individuals in recovery, re-entry, low-income individuals, and people with special needs." />
   <link rel="canonical" href="https://www.devinehousingsolutions.com/" />
   <meta name="theme-color" content="#2e7d32" />
 
-  <!-- Social -->
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Devine Housing Solutions | Columbia, SC" />
-  <meta property="og:description" content="Housing navigation, placement, and supportive services across Columbia, SC and nearby communities within an hour." />
+  <meta property="og:description" content="Affordable, supportive housing for individuals including seniors, veterans, recovery, re-entry, low-income, and special needs populations across Columbia, SC." />
   <meta property="og:url" content="https://www.devinehousingsolutions.com/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' ry='12' fill='%232e7d32'/%3E%3Cpath d='M16 36l16-16 16 16' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M22 36v12h20V36' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
-
   <style>
-    :root{
-      --green:#2e7d32; --green-dark:#255f28;
-      --gray-900:#1f2933; --gray-700:#3e4c59; --gray-100:#f5f7fa; --white:#fff;
-      --focus:#ffbf47; --max:1200px;
+    :root {
+      --green: #2e7d32;
+      --gray-900: #1f2933;
+      --gray-100: #f5f7fa;
+      --white: #fff;
+      --focus: #ffbf47;
+      --max: 1200px;
     }
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--gray-900);background:#fff;line-height:1.6}
-    a{color:var(--green);text-decoration:none}
-    a:focus,button:focus,input:focus,textarea:focus,select:focus{outline:3px solid var(--focus);outline-offset:2px}
-    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{position:static;width:auto;height:auto;padding:.5rem 1rem;background:#000;color:#fff}
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid #e5e7eb}
-    .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;}
-    .brand{display:flex;align-items:center;gap:.75rem;font-weight:800;color:var(--gray-900)}
-    .brand-logo{width:40px;height:40px;border-radius:10px;background:var(--green);display:grid;place-items:center;color:#fff;font-weight:900}
-    .nav ul{list-style:none;display:flex;gap:1rem;margin-left:auto;padding:0}
-    .nav a{color:var(--gray-900);padding:.5rem .75rem;border-radius:.5rem}
-    .nav a:hover{background:var(--gray-100)}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1rem;border-radius:.6rem;border:2px solid var(--green);color:#fff;background:var(--green);font-weight:700}
-    .btn.alt{background:#fff;color:var(--green)}
-    .btn:hover{transform:translateY(-1px)}
-    .hero{position:relative;isolation:isolate;color:#fff;text-align:left;background:linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;}
-    .hero-inner{max-width:var(--max);margin:auto;padding:96px 16px 64px}
-    .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:0 0 .5rem}
-    .hero p{max-width:60ch;margin:0 0 1.25rem}
-    .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
-    .badge{background:#fff;color:var(--gray-900);padding:.4rem .65rem;border-radius:999px;font-size:.9rem;border:1px solid #e5e7eb}
-    section{padding:56px 16px}
-    .wrap{max-width:var(--max);margin:auto}
-    .grid{display:grid;gap:24px}
-    @media(min-width:900px){.grid-2{grid-template-columns:1.1fr .9fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
-    .card{border:1px solid #e5e7eb;border-radius:14px;padding:20px;background:#fff}
-    .card h3{margin-top:0}
-    .muted{color:var(--gray-700)}
-    .list{padding-left:1rem}
-    .em{color:var(--green);font-weight:700}
-    .accent{background:var(--gray-100)}
-    .areas span{display:inline-block;margin:.25rem .35rem;padding:.35rem .6rem;border-radius:999px;border:1px solid #e5e7eb;background:#fff}
-    .footer{background:var(--gray-900);color:#fff}
-    .footer a{color:#c7ffd1}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .notice{border-left:4px solid var(--green);padding:.75rem 1rem;background:#f0fdf4}
-    form{display:grid;gap:.75rem}
-    label{font-weight:700}
-    input,textarea,select{width:100%;padding:.75rem;border:1px solid #d1d5db;border-radius:.6rem;font:inherit}
-    .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color: var(--gray-900);
+      background: var(--white);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: var(--max);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: var(--gray-900);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--green);
+    }
+    .btn {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .hero {
+      background: linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      color: var(--white);
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: var(--max);
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    @media(min-width: 900px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    footer {
+      background: var(--gray-900);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    footer a {
+      color: #c7ffd1;
+      text-decoration: none;
+    }
   </style>
 
-  <!-- LocalBusiness Schema -->
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "name":"Devine Housing Solutions",
-    "image":"https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop",
-    "url":"https://www.devinehousingsolutions.com/",
-    "telephone":"REPLACE_WITH_PHONE_LATER",
-    "priceRange":"$",
+    "description":"Affordable housing provider in Columbia, SC offering housing for seniors, veterans, individuals in recovery, re-entry populations, low-income individuals, and people with special needs.",
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"REPLACE_WITH_ADDRESS_LATER",
@@ -86,219 +122,104 @@
       "addressCountry":"US"
     },
     "areaServed":[
-      {"@type":"City","name":"Columbia"},
-      {"@type":"City","name":"Lexington"},
-      {"@type":"City","name":"West Columbia"},
-      {"@type":"City","name":"Cayce"},
-      {"@type":"City","name":"Irmo"},
-      {"@type":"City","name":"Chapin"},
-      {"@type":"City","name":"Blythewood"},
-      {"@type":"City","name":"Forest Acres"},
-      {"@type":"City","name":"Elgin"},
-      {"@type":"City","name":"Lugoff"},
-      {"@type":"City","name":"Camden"},
-      {"@type":"City","name":"Sumter"},
-      {"@type":"City","name":"Newberry"},
-      {"@type":"City","name":"Orangeburg"},
-      {"@type":"City","name":"Winnsboro"},
-      {"@type":"City","name":"Aiken"}
-    ]
+      "Columbia SC","Lexington SC","Irmo SC","Blythewood SC","West Columbia SC",
+      "Cayce SC","Sumter SC","Orangeburg SC","Aiken SC","Newberry SC","Camden SC","Winnsboro SC"
+    ],
+    "url":"https://www.devinehousingsolutions.com"
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header role="banner" aria-label="Site header">
-    <nav class="nav" aria-label="Main navigation">
-      <div class="brand" aria-label="Devine Housing Solutions home">
-        <div class="brand-logo" aria-hidden="true">DH</div>
-        <span>Devine Housing Solutions</span>
+  <header>
+    <nav>
+      <div><strong>Devine Housing Solutions</strong></div>
+      <div>
+        <a href="#programs">Programs</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Apply</a>
       </div>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#areas">Areas</a></li>
-        <li><a href="#hosting">Hosting</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a class="btn alt" href="#contact">Contact</a></li>
-      </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" role="region" aria-label="Hero">
-      <div class="hero-inner">
-        <h1>Housing Navigation & Support Across <span class="em">Columbia, SC</span> & Nearby Communities</h1>
-        <p>Devine Housing Solutions partners with individuals, families, and providers to navigate housing options, prepare properties, and connect to supportive resources across the Midlands—within about an hour of Columbia.</p>
-        <div class="cta">
-          <a class="btn" href="#contact" aria-label="Contact Devine Housing Solutions">Get Help Today</a>
-          <a class="btn alt" href="#services" aria-label="See our services">Explore Services</a>
-        </div>
-        <div class="badges" aria-label="Service highlights">
-          <span class="badge">Columbia • Lexington • Irmo • Blythewood</span>
-          <span class="badge">Accessible & Inclusive</span>
-          <span class="badge">Local Expertise</span>
-        </div>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Affordable, Supportive Housing in Columbia, SC</h1>
+    <p>Providing affordable housing for seniors, veterans, individuals in recovery, re-entry populations, low-income residents, and people with special needs throughout Columbia and surrounding communities.</p>
+    <a href="#contact" class="btn">Apply for Housing</a>
+  </section>
 
-    <section id="services" class="wrap grid grid-3" aria-labelledby="services-title">
-      <h2 id="services-title" class="sr-only">Our Services</h2>
-      <article class="card" role="article">
-        <h3>Housing Navigation</h3>
-        <p class="muted">Personalized guidance to understand eligibility, locate options, and prepare applications.</p>
-        <ul class="list">
-          <li>Rental searches & landlord outreach</li>
-          <li>Application readiness & documentation</li>
-          <li>Barrier reduction strategies</li>
-        </ul>
-      </article>
-      <article class="card" role="article">
-        <h3>Placement & Support</h3>
-        <p class="muted">From move‑in coordination to linking you with local supportive services.</p>
-        <ul class="list">
-          <li>Move‑in planning & checklists</li>
-          <li>Connections to community resources</li>
-          <li>Follow‑up support</li>
-        </ul>
-      </article>
-      <article class="card" role="article">
-        <h3>Property / Program Setup</h3>
-        <p class="muted">Advisory for home providers and small programs, including compliance considerations.</p>
-        <ul class="list">
-          <li>Readiness assessments</li>
-          <li>Community fit & safety best practices</li>
-          <li>Referral pathways</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="areas" class="accent" aria-labelledby="areas-title">
-      <div class="wrap">
-        <h2 id="areas-title">Serving Columbia, SC & Within ~1 Hour</h2>
-        <p>We proudly serve the Midlands and surrounding communities:</p>
-        <div class="areas" aria-label="Areas we serve">
-          <span>Columbia</span><span>Lexington</span><span>West Columbia</span><span>Cayce</span><span>Irmo</span><span>Chapin</span><span>Blythewood</span><span>Forest Acres</span><span>Elgin</span><span>Lugoff</span><span>Camden</span><span>Sumter</span><span>Newberry</span><span>Orangeburg</span><span>Winnsboro</span><span>Aiken</span>
-        </div>
-        <div class="notice" role="note">Need help in a nearby town not listed? <a href="#contact">Reach out</a>—we may still serve your area.</div>
+  <section id="programs">
+    <h2>Our Housing Programs</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Seniors (55+)</h3>
+        <p>Safe, affordable homes designed to support seniors in the Columbia community.</p>
       </div>
-    </section>
-
-    <section id="hosting" class="wrap grid grid-2" aria-labelledby="hosting-title">
-      <div>
-        <h2 id="hosting-title">Hosting & Website Options (If Needed)</h2>
-        <p>We can host your website on reliable, fast platforms with SSL and SEO best practices. If you already have hosting, we’ll integrate seamlessly.</p>
-        <ul class="list">
-          <li>Modern hosting (custom domain, HTTPS, CDN)</li>
-          <li>SEO essentials (meta tags, sitemap, robots.txt)</li>
-          <li>Accessibility and performance optimization</li>
-          <li>Analytics & simple updates</li>
-        </ul>
-        <p class="muted">Want us to set this up for you? Mention “hosting setup” in the contact form.</p>
+      <div class="card">
+        <h3>Veterans</h3>
+        <p>Affordable housing with dignity for those who served our country.</p>
       </div>
-      <div class="card" aria-label="Hosting features card">
-        <h3>Fast, Secure & Search‑Ready</h3>
-        <ul class="list">
-          <li>Free SSL certificates</li>
-          <li>Global CDN for quick load times</li>
-          <li>Automatic sitemap & robots rules</li>
-          <li>One‑click deploys with rollbacks</li>
-        </ul>
+      <div class="card">
+        <h3>Recovery</h3>
+        <p>Supportive housing for men and women in recovery and sober living programs.</p>
       </div>
-    </section>
-
-    <section id="about" class="wrap grid grid-2" aria-labelledby="about-title">
-      <div>
-        <h2 id="about-title">About Devine Housing Solutions</h2>
-        <p>We’re a Columbia‑based team focused on dignified, practical housing guidance. Our approach centers on clarity, respect, and local know‑how so people can move forward with confidence.</p>
-        <ul class="list">
-          <li>Local expertise across the Midlands</li>
-          <li>Clear communication for all backgrounds</li>
-          <li>Accessibility‑first design & services</li>
-        </ul>
+      <div class="card">
+        <h3>Re-Entry</h3>
+        <p>Housing opportunities for individuals transitioning from incarceration to community life.</p>
       </div>
-      <figure class="card" role="img" aria-label="Front porch of a home in a neighborhood">
-        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop" alt="Inviting front porch of a home in a Midlands neighborhood" style="width:100%;height:auto;border-radius:10px" loading="lazy">
-        <figcaption class="muted">Rooted in Columbia, serving the surrounding Midlands.</figcaption>
-      </figure>
-    </section>
-
-    <section id="faq" class="wrap" aria-labelledby="faq-title">
-      <h2 id="faq-title">Frequently Asked Questions</h2>
-      <details>
-        <summary>Who do you help?</summary>
-        <p>Individuals, families, and small providers seeking housing placements, navigation, or setup guidance.</p>
-      </details>
-      <details>
-        <summary>Do you operate only in Columbia?</summary>
-        <p>No—most work spans communities within about an hour of Columbia, including Lexington, Irmo, Blythewood, Cayce, and more.</p>
-      </details>
-      <details>
-        <summary>How much does it cost?</summary>
-        <p>Pricing depends on the level of support. Share your needs via the contact form for a tailored estimate.</p>
-      </details>
-    </section>
-
-    <section id="contact" class="wrap grid grid-2" aria-labelledby="contact-title">
-      <div>
-        <h2 id="contact-title">Contact Us</h2>
-        <p class="muted">Add your address and phone when you’re ready—placeholders are below and in the page footer & schema.</p>
-        <ul class="list">
-          <li><strong>Address:</strong> REPLACE_WITH_ADDRESS_LATER, Columbia, SC REPLACE_ZIP</li>
-          <li><strong>Phone:</strong> REPLACE_WITH_PHONE_LATER</li>
-          <li><strong>Email:</strong> info@devinehousingsolutions.com</li>
-        </ul>
+      <div class="card">
+        <h3>Low-Income Residents</h3>
+        <p>Affordable housing for individuals facing financial hardship in the Midlands.</p>
       </div>
-      <form aria-label="Contact form" method="post" action="https://formspree.io/f/your-id">
-        <label for="name">Name</label>
-        <input id="name" name="name" autocomplete="name" required />
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" required />
-        <label for="service">What do you need?</label>
-        <select id="service" name="service">
-          <option>Housing Navigation</option>
-          <option>Placement & Support</option>
-          <option>Property / Program Setup</option>
-          <option>Hosting Setup</option>
-          <option>Other</option>
-        </select>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Share your goals, timeline, and location."></textarea>
-        <button class="btn" type="submit">Send Message</button>
-        <p class="muted" style="margin:0">Prefer phone? Replace the placeholder above and we’ll call you.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <section class="wrap" style="padding:32px 16px">
-      <div class="grid grid-3">
-        <div>
-          <h3 style="margin-top:0">Devine Housing Solutions</h3>
-          <p class="muted">REPLACE_WITH_ADDRESS_LATER, Columbia, SC REPLACE_ZIP</p>
-          <p class="muted">Phone: REPLACE_WITH_PHONE_LATER</p>
-          <p><a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="list">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#areas">Areas</a></li>
-            <li><a href="#hosting">Hosting</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Accessibility</h4>
-          <p class="muted">We design for readability, strong contrast, keyboard navigation, and clear language. Need accommodations? <a href="#contact">Contact us</a>.</p>
-        </div>
+      <div class="card">
+        <h3>Special Needs</h3>
+        <p>Accessible, affordable homes for individuals with disabilities and supportive needs.</p>
       </div>
-      <hr style="border-color:#2f3b45; margin:24px 0" />
-      <p style="margin:0;font-size:.9rem;color:#cbd5e1">© <span id="year"></span> Devine Housing Solutions • Columbia, South Carolina</p>
-    </section>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Devine Housing Solutions</h2>
+    <p>Devine Housing Solutions is an <strong>affordable housing provider</strong> in Columbia, SC. We are committed to creating safe, dignified, and supportive homes for individuals including seniors, veterans, those in recovery, re-entry populations, low-income residents, and people with special needs. Our mission is to help individuals find stability and community through housing.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Apply for Housing</h2>
+    <p>Please reach out to us to inquire about housing availability. Provide your details below, and we will contact you.</p>
+    <form method="post" action="https://formspree.io/f/your-id">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" />
+
+      <label for="program">Program of Interest</label>
+      <select id="program" name="program">
+        <option>Seniors (55+)</option>
+        <option>Veterans</option>
+        <option>Recovery</option>
+        <option>Re-Entry</option>
+        <option>Low-Income</option>
+        <option>Special Needs</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Devine Housing Solutions • Columbia, SC</p>
+    <p>Email: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+    <p>Address & Phone: REPLACE_WITH_ADDRESS_AND_PHONE</p>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
