@@ -3,31 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Care | Devine Housing Solutions</title>
-  <meta name="description" content="Learn how Devine Housing Solutions provides affordable, supportive housing in Columbia, SC. Our care approach focuses on dignity, safety, stability, and community for individuals in need." />
-  <link rel="canonical" href="https://www.devinehousingsolutions.com/our-care.html" />
+  <title>Devine Housing Solutions | Affordable Housing in Columbia, SC</title>
+  <meta name="description" content="Devine Housing Solutions provides affordable, all-inclusive housing in Columbia, SC. Programs for seniors, veterans, recovery, re-entry, low-income, and special needs residents. Referrals accepted nationwide." />
+  <link rel="canonical" href="https://www.devinehousingsolutions.com/" />
   <meta name="theme-color" content="#2e7d32" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Devine Housing Solutions | Columbia, SC" />
+  <meta property="og:description" content="Affordable, supportive housing for seniors, veterans, recovery, re-entry, low-income, and special needs residents. Referrals accepted nationwide." />
+  <meta property="og:url" content="https://www.devinehousingsolutions.com/" />
+  <meta property="og:image" content="https://www.devinehousingsolutions.com/social-share.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
 
   <style>
     :root {
       --green: #2e7d32;
       --gray-900: #1f2933;
+      --gray-100: #f5f7fa;
       --white: #fff;
       --max: 1200px;
     }
-    body { margin: 0; font-family: system-ui, sans-serif; color: var(--gray-900); line-height: 1.6; }
-    header { background: var(--white); border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 100; }
-    nav { max-width: var(--max); margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
-    nav a { margin-left: 1rem; color: var(--gray-900); text-decoration: none; font-weight: 600; }
-    nav a:hover { color: var(--green); }
-    .btn { background: var(--green); color: var(--white); padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; }
-    section { padding: 3rem 1rem; max-width: var(--max); margin: auto; }
-    h1, h2 { color: var(--green); }
-    .grid { display: grid; gap: 1.5rem; }
-    @media(min-width: 900px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
-    .card { background: var(--white); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; }
-    footer { background: var(--gray-900); color: var(--white); padding: 2rem 1rem; text-align: center; }
-    footer a { color: #c7ffd1; text-decoration: none; }
+    body { margin:0; font-family:system-ui, sans-serif; color:var(--gray-900); background:var(--white); line-height:1.6; }
+    header { background:var(--white); border-bottom:1px solid #ddd; position:sticky; top:0; z-index:100; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; padding:1rem; }
+    nav a { margin-left:1rem; color:var(--gray-900); text-decoration:none; font-weight:600; }
+    nav a:hover { color:var(--green); }
+    .btn { background:var(--green); color:var(--white); padding:0.6rem 1rem; border-radius:6px; text-decoration:none; font-weight:700; }
+    .hero { background:linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat; color:var(--white); padding:5rem 1rem; text-align:center; }
+    .hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    section { padding:3rem 1rem; max-width:var(--max); margin:auto; }
+    .grid { display:grid; gap:1.5rem; }
+    @media(min-width: 900px){ .grid-3{ grid-template-columns:repeat(3,1fr);} }
+    .card { background:var(--white); border:1px solid #ddd; border-radius:8px; padding:1rem; text-align:center; transition:0.3s; }
+    .card:hover { box-shadow:0 4px 12px rgba(0,0,0,0.1); transform:translateY(-4px); }
+    .card img { max-width:100%; border-radius:6px; margin-bottom:1rem; }
+    footer { background:var(--gray-900); color:var(--white); padding:2rem 1rem; text-align:center; }
+    footer a { color:#c7ffd1; text-decoration:none; }
   </style>
 
   <!-- JSON-LD Schema -->
@@ -36,7 +53,7 @@
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "name":"Devine Housing Solutions",
-    "description":"Devine Housing Solutions provides affordable, supportive housing in Columbia, SC with a focus on dignity, safety, stability, and community for individuals in need.",
+    "description":"Affordable housing provider in Columbia, SC offering all-inclusive housing for seniors, veterans, recovery, re-entry, low-income, and special needs residents. Referrals accepted nationwide.",
     "telephone":"+1-803-500-1901",
     "email":"info@devinehousingsolutions.com",
     "address":{
@@ -47,7 +64,7 @@
       "postalCode":"REPLACE_ZIP",
       "addressCountry":"US"
     },
-    "url":"https://www.devinehousingsolutions.com/our-care.html"
+    "url":"https://www.devinehousingsolutions.com"
   }
   </script>
 </head>
@@ -65,30 +82,37 @@
     </nav>
   </header>
 
-  <section>
-    <h1>Our Care</h1>
-    <p>At Devine Housing Solutions, our mission is to provide <strong>affordable, supportive, and dignified housing</strong> for individuals in need across Columbia, SC and surrounding communities. We believe housing is more than shelter — it is the foundation for stability, recovery, and personal growth.</p>
-    
-    <div class="grid grid-2">
-      <div class="card">
-        <h2>Safe & Affordable</h2>
-        <p>We prioritize safe, clean, and affordable housing options so individuals can focus on rebuilding their lives without the stress of financial barriers.</p>
-      </div>
-      <div class="card">
-        <h2>Supportive Environment</h2>
-        <p>Our homes are designed to create a supportive atmosphere that encourages stability, accountability, and community connections.</p>
-      </div>
-      <div class="card">
-        <h2>Dignity & Respect</h2>
-        <p>Every individual we serve deserves dignity, respect, and the opportunity to thrive. Our housing programs reflect this core value.</p>
-      </div>
-      <div class="card">
-        <h2>Focused on Individuals</h2>
-        <p>We serve seniors, veterans, recovery populations, re-entry individuals, low-income residents, and people with special needs — with programs tailored for individual success.</p>
-      </div>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Affordable, Supportive Housing in Columbia, SC</h1>
+    <p>We are located in Columbia, SC, but proudly accept referrals across America. Devine Housing Solutions provides affordable, all-inclusive housing for seniors, veterans, individuals in recovery, re-entry populations, low-income residents, and people with special needs.</p>
+    <a href="our-care.html" class="btn">Learn More</a>
+    <a href="contact.html" class="btn" style="margin-left:10px; background:#1f2933;">Make a Referral</a>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section id="quick-links">
+    <h2>Explore Our Services</h2>
+    <div class="grid grid-3">
+      <a href="demographics.html" class="card">
+        <img src="https://images.unsplash.com/photo-1589923188900-5e3a2b3f3a4d?q=80&w=600&auto=format&fit=crop" alt="Affordable housing demographics Columbia SC">
+        <h3>Demographics We Serve</h3>
+        <p>Learn more about the populations we support, including seniors, veterans, recovery, re-entry, low-income, and special needs residents.</p>
+      </a>
+      <a href="our-care.html" class="card">
+        <img src="https://images.unsplash.com/photo-1600585154206-7c9f5f8a9c49?q=80&w=600&auto=format&fit=crop" alt="Supportive housing Columbia SC">
+        <h3>Our Care Approach</h3>
+        <p>Discover how our all-inclusive housing and supportive services provide dignity and stability for individuals in need.</p>
+      </a>
+      <a href="contact.html" class="card">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop" alt="Contact Devine Housing Solutions Columbia SC">
+        <h3>Contact & Referrals</h3>
+        <p>Reach out to us directly or send a referral. We accept referrals nationwide.</p>
+      </a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; <span id="year"></span> Devine Housing Solutions • Columbia, SC</p>
     <p>
