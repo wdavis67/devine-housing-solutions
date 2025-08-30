@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Demographics Served | Devine Housing Solutions</title>
   <meta name="description" content="Affordable housing in Columbia, SC for seniors, veterans, recovery, re-entry populations, low-income, and special needs residents. Referrals accepted nationwide." />
   <link rel="canonical" href="https://www.devinehousingsolutions.com/demographics.html" />
   <meta name="theme-color" content="#2e7d32" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.png">
-
   <style>
-    :root { --green:#2e7d32; --gray-900:#1f2933; --white:#fff; --max:1200px; }
-    body{margin:0;font-family:system-ui,sans-serif;color:var(--gray-900);line-height:1.6;}
+    :root { --green:#2e7d32; --gray-900:#1f2933; --gray-100:#f5f7fa; --white:#fff; --max:1200px; }
+    body{margin:0;font-family:system-ui,sans-serif;color:var(--gray-900);line-height:1.6;background:var(--white);}
     header{background:var(--white);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:100;}
     nav{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;}
     nav a{margin-left:1rem;color:var(--gray-900);text-decoration:none;font-weight:600;}
@@ -23,9 +19,8 @@
     section{padding:3rem 1rem;max-width:var(--max);margin:auto;}
     h1,h2{color:var(--green);}
     .grid{display:grid;gap:1.5rem;}
-    @media(min-width:900px){.grid-2{grid-template-columns:repeat(2,1fr);} .grid-3{grid-template-columns:repeat(3,1fr);}}
-    .card{background:var(--white);border:1px solid #ddd;border-radius:8px;padding:1.5rem;text-align:center;}
-    .card img{max-width:100%;border-radius:6px;margin-bottom:1rem;}
+    @media(min-width:900px){.grid-2{grid-template-columns:repeat(2,1fr);} }
+    .card{background:var(--gray-100);border-radius:8px;padding:1.5rem;}
     footer{background:var(--gray-900);color:var(--white);padding:2rem 1rem;text-align:center;}
     footer a{color:#c7ffd1;text-decoration:none;}
   </style>
@@ -45,38 +40,27 @@
   </header>
 
   <section>
-    <h1>Demographics Served</h1>
-    <p>We proudly provide <strong>affordable, all-inclusive housing</strong> to individuals across Columbia, SC and the Midlands. Our programs are designed for stability, dignity, and community support.</p>
+    <h1>Demographics We Serve</h1>
+    <p>We proudly provide <strong>affordable, all-inclusive housing</strong> for individuals across Columbia, SC and beyond. Our goal is to reduce homelessness and provide dignity, stability, and safety for every resident we serve.</p>
     
     <div class="grid grid-2">
-      <div class="card"><h2>Seniors (55+)</h2><p>Safe, affordable living designed for older adults seeking stability and comfort.</p></div>
-      <div class="card"><h2>Veterans</h2><p>Housing that honors those who served, offering dignity and respect.</p></div>
-      <div class="card"><h2>Recovery</h2><p>Supportive homes for men and women rebuilding their lives in sobriety.</p></div>
-      <div class="card"><h2>Re-Entry</h2><p>Housing for individuals transitioning from incarceration to community life.</p></div>
+      <div class="card"><h2>Seniors (55+)</h2><p>Safe, affordable housing for older adults seeking stability and comfort.</p></div>
+      <div class="card"><h2>Veterans</h2><p>Housing that honors those who served, with dignity and respect.</p></div>
+      <div class="card"><h2>Recovery</h2><p>Supportive homes for individuals rebuilding their lives in sobriety.</p></div>
+      <div class="card"><h2>Re-Entry</h2><p>Housing for individuals transitioning back into the community after incarceration.</p></div>
       <div class="card"><h2>Low-Income</h2><p>Affordable, all-inclusive housing for individuals facing financial hardship.</p></div>
-      <div class="card"><h2>Special Needs</h2><p>Accessible homes designed for individuals with disabilities or special needs.</p></div>
+      <div class="card"><h2>Special Needs</h2><p>Accessible homes for individuals with disabilities or other special needs.</p></div>
     </div>
   </section>
 
+  <!-- Optional demographic illustration/photo -->
   <section>
-    <h2>Learn More</h2>
-    <div class="grid grid-3">
-      <a href="our-care.html" class="card">
-        <img src="https://images.unsplash.com/photo-1600585154206-7c9f5f8a9c49?q=80&w=600&auto=format&fit=crop" alt="Our care housing services Columbia SC">
-        <h3>Our Care</h3>
-        <p>Discover how our supportive, all-inclusive care approach works.</p>
-      </a>
-      <a href="about.html" class="card">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600&auto=format&fit=crop" alt="About Devine Housing Solutions Columbia SC">
-        <h3>About Us</h3>
-        <p>Learn more about our mission and dedication to affordable housing.</p>
-      </a>
-      <a href="contact.html" class="card">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop" alt="Contact Devine Housing Solutions Columbia SC">
-        <h3>Contact & Referrals</h3>
-        <p>Reach out directly or send a referral. We accept referrals nationwide.</p>
-      </a>
-    </div>
+    <picture>
+      <source srcset="images/demographics.webp" type="image/webp">
+      <source srcset="images/demographics.png" type="image/png">
+      <source srcset="images/demographics.jpeg" type="image/jpeg">
+      <img src="images/demographics.jpg" alt="Housing demographics supported in Columbia SC" style="width:100%;border-radius:8px;">
+    </picture>
   </section>
 
   <footer>
