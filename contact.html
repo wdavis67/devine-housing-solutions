@@ -42,12 +42,40 @@
   </header>
 
   <section>
-    <h1>Contact Us</h1>
-    <div class="contact-info">
-      <p><strong>Phone:</strong> <a href="tel:18035001901">803-500-1901</a><br>
-      <strong>Email:</strong> <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
-      <p><strong>Address:</strong> REPLACE_WITH_ADDRESS_LATER</p>
-    </div>
+  <h1>Contact Us</h1>
+  <div class="contact-info">
+    <p><strong>Phone:</strong> <a href="tel:18035001901">803-500-1901</a><br>
+    <strong>Email:</strong> <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+    <p><strong>Address:</strong> REPLACE_WITH_ADDRESS_LATER</p>
+  </div>
+
+  <h2>Send a Message</h2>
+  <form method="post" action="https://formspree.io/f/your-id">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" required />
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required />
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" />
+    <label for="program">Program of Interest</label>
+    <select id="program" name="program">
+      <option>Seniors (55+)</option><option>Veterans</option><option>Recovery</option>
+      <option>Re-Entry</option><option>Low-Income</option><option>Special Needs</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Optional referral/support image -->
+  <picture>
+    <source srcset="images/referral.webp" type="image/webp">
+    <source srcset="images/referral.png" type="image/png">
+    <source srcset="images/referral.jpeg" type="image/jpeg">
+    <img src="images/referral.jpg" alt="Referral support and housing assistance" style="width:100%;border-radius:8px;margin-top:2rem;">
+  </picture>
+</section>
+
 
     <h2>Send a Message</h2>
     <form method="post" action="https://formspree.io/f/your-id">
