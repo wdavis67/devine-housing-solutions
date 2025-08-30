@@ -1,0 +1,22 @@
+/ (root)
+│
+├── index.html
+├── demographics.html
+├── our-care.html
+├── about.html
+├── contact.html
+│
+├── robots.txt
+├── sitemap.xml
+│
+├── favicon.ico
+├── favicon.png
+├── social-share.jpg
+│
+└── /images/
+     ├── hero.jpg              (homepage hero background)
+     ├── referral.jpg          (referral section / contact card)
+     ├── demographics.jpg      (demographics quick link image)
+     ├── ourcare1.jpg          (our care – cozy living room)
+     ├── ourcare2.jpg          (our care – kitchen/dining)
+     ├── about.jpg             (about us / mission visual)
