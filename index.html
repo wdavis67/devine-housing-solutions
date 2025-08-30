@@ -8,18 +8,9 @@
   <link rel="canonical" href="https://www.devinehousingsolutions.com/" />
   <meta name="theme-color" content="#2e7d32" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Devine Housing Solutions | Columbia, SC" />
-  <meta property="og:description" content="Affordable, supportive housing for seniors, veterans, recovery, re-entry, low-income, and special needs residents. Referrals accepted nationwide." />
-  <meta property="og:url" content="https://www.devinehousingsolutions.com/" />
-  <meta property="og:image" content="https://www.devinehousingsolutions.com/social-share.jpg" />
-
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
 
   <style>
     :root { --green:#2e7d32; --gray-900:#1f2933; --white:#fff; --max:1200px; }
@@ -29,7 +20,7 @@
     nav a { margin-left:1rem; color:var(--gray-900); text-decoration:none; font-weight:600; }
     nav a:hover { color:var(--green); }
     .btn { background:var(--green); color:var(--white); padding:0.6rem 1rem; border-radius:6px; text-decoration:none; font-weight:700; }
-    .hero { background:linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('https://images.unsplash.com/photo-1600585154311-52741aa67fb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color:var(--white); padding:5rem 1rem; text-align:center; }
+    .hero { color:var(--white); padding:5rem 1rem; text-align:center; background:var(--gray-900); }
     .hero h1 { font-size:2.5rem; margin-bottom:1rem; }
     section { padding:3rem 1rem; max-width:var(--max); margin:auto; }
     .grid { display:grid; gap:1.5rem; }
@@ -55,33 +46,55 @@
     </nav>
   </header>
 
- <section class="hero" style="background:linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('images/hero.jpg') center/cover no-repeat;">
-  <h1>Affordable, Supportive Housing in Columbia, SC</h1>
-  <p>We are located in Columbia, SC, but proudly accept referrals across America. Devine Housing Solutions provides affordable, all-inclusive housing for seniors, veterans, individuals in recovery, re-entry populations, low-income residents, and people with special needs.</p>
-  <a href="our-care.html" class="btn">Learn More</a>
-  <a href="contact.html" class="btn" style="margin-left:10px; background:#1f2933;">Make a Referral</a>
-</section>
+  <!-- Hero with <picture> -->
+  <section class="hero" style="background:linear-gradient(180deg, rgba(31,41,51,.65), rgba(31,41,51,.75)), url('images/hero.jpg') center/cover no-repeat;">
+    <h1>Affordable, Supportive Housing in Columbia, SC</h1>
+    <p>We are located in Columbia, SC, but proudly accept referrals across America. Devine Housing Solutions provides affordable, all-inclusive housing for seniors, veterans, individuals in recovery, re-entry populations, low-income residents, and people with special needs.</p>
+    <a href="our-care.html" class="btn">Learn More</a>
+    <a href="contact.html" class="btn" style="margin-left:10px; background:#1f2933;">Make a Referral</a>
+  </section>
 
-
-  <!-- Quick Links Section -->
+  <!-- Quick Links -->
   <section id="quick-links">
     <h2>Explore Our Services</h2>
     <div class="grid grid-3">
+
+      <!-- Demographics -->
       <a href="demographics.html" class="card">
-        <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2f63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Senior housing resident smiling in Columbia SC">
+        <picture>
+          <source srcset="images/demographics.webp" type="image/webp">
+          <source srcset="images/demographics.png" type="image/png">
+          <source srcset="images/demographics.jpeg" type="image/jpeg">
+          <img src="images/demographics.jpg" alt="Demographics we serve in Columbia SC">
+        </picture>
         <h3>Demographics We Serve</h3>
         <p>Learn more about the populations we support, including seniors, veterans, recovery, re-entry, low-income, and special needs residents.</p>
       </a>
+
+      <!-- Our Care -->
       <a href="our-care.html" class="card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="All-inclusive supportive housing interior Columbia SC">
+        <picture>
+          <source srcset="images/ourcare1.webp" type="image/webp">
+          <source srcset="images/ourcare1.png" type="image/png">
+          <source srcset="images/ourcare1.jpeg" type="image/jpeg">
+          <img src="images/ourcare1.jpg" alt="Our care approach housing in Columbia SC">
+        </picture>
         <h3>Our Care Approach</h3>
         <p>Discover how our all-inclusive housing and supportive services provide dignity and stability for individuals in need.</p>
       </a>
+
+      <!-- Referral -->
       <a href="contact.html" class="card">
-        <img src="https://images.unsplash.com/photo-1584697964351-b5538efc0c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Referral support and housing assistance Columbia SC">
+        <picture>
+          <source srcset="images/referral.webp" type="image/webp">
+          <source srcset="images/referral.png" type="image/png">
+          <source srcset="images/referral.jpeg" type="image/jpeg">
+          <img src="images/referral.jpg" alt="Contact and referral support for affordable housing">
+        </picture>
         <h3>Contact & Referrals</h3>
         <p>Reach out to us directly or send a referral. We accept referrals nationwide.</p>
       </a>
+
     </div>
   </section>
 
@@ -95,4 +108,3 @@
   <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
