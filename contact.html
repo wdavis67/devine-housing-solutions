@@ -6,9 +6,10 @@
   <title>Contact Us | Devine Housing Solutions</title>
   <meta name="description" content="Contact Devine Housing Solutions in Columbia, SC. Call 803-500-1901 or email info@devinehousingsolutions.com to inquire about affordable, all-inclusive housing." />
   <link rel="canonical" href="https://www.devinehousingsolutions.com/contact.html" />
+  <meta name="theme-color" content="#2e7d32" />
 
   <style>
-    :root { --green:#2e7d32; --gray-900:#1f2933; --white:#fff; --max:1200px; }
+    :root { --green:#2e7d32; --gray-900:#1f2933; --gray-100:#f5f7fa; --white:#fff; --max:1200px; }
     body{margin:0;font-family:system-ui,sans-serif;color:var(--gray-900);line-height:1.6;}
     header{background:var(--white);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:100;}
     nav{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;}
@@ -21,6 +22,7 @@
     input,textarea,select{padding:0.7rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;}
     button{background:var(--green);color:var(--white);border:none;padding:0.8rem;border-radius:6px;font-weight:bold;cursor:pointer;}
     button:hover{opacity:0.9;}
+    .contact-info{background:var(--gray-100);padding:1rem;border-radius:6px;margin-bottom:2rem;}
     footer{background:var(--gray-900);color:var(--white);padding:2rem 1rem;text-align:center;}
     footer a{color:#c7ffd1;text-decoration:none;}
   </style>
@@ -41,9 +43,13 @@
 
   <section>
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Please reach out by phone, email, or using the form below.</p>
-    <p><strong>Phone:</strong> <a href="tel:18035001901">803-500-1901</a><br><strong>Email:</strong> <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> <a href="tel:18035001901">803-500-1901</a><br>
+      <strong>Email:</strong> <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+      <p><strong>Address:</strong> REPLACE_WITH_ADDRESS_LATER</p>
+    </div>
 
+    <h2>Send a Message</h2>
     <form method="post" action="https://formspree.io/f/your-id">
       <label for="name">Full Name</label>
       <input id="name" name="name" required />
