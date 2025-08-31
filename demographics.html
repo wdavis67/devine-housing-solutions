@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="="utf-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Demographics Served | Devine Housing Solutions</title>
-  <meta name="description" content="Affordable housing in Columbia, SC for seniors, veterans, recovery, re-entry populations, low-income, and special needs residents. Referrals accepted nationwide." />
-  <link rel="canonical" href="https://www.devinehousingsolutions.com/demographics.html" />
-  <meta name="theme-color" content="#2e7d32" />
-
+  <title>Demographics We Serve | Devine Housing Solutions</title>
+  <meta name="description" content="Devine Housing Solutions offers affordable housing in Columbia, SC for seniors, veterans, recovery, re-entry populations, low-income residents, and special needs individuals." />
+  <meta name="theme-color" content="#1C3F60" />
   <style>
-    :root { --green:#2e7d32; --gray-900:#1f2933; --gray-100:#f5f7fa; --white:#fff; --max:1200px; }
-    body{margin:0;font-family:system-ui,sans-serif;color:var(--gray-900);line-height:1.6;background:var(--white);}
-    header{background:var(--white);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:100;}
-    nav{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;}
-    nav a{margin-left:1rem;color:var(--gray-900);text-decoration:none;font-weight:600;}
-    nav a:hover{color:var(--green);}
-    .btn{background:var(--green);color:var(--white);padding:0.6rem 1rem;border-radius:6px;text-decoration:none;font-weight:700;}
-    section{padding:3rem 1rem;max-width:var(--max);margin:auto;}
-    h1,h2{color:var(--green);}
-    .grid{display:grid;gap:1.5rem;}
-    @media(min-width:900px){.grid-2{grid-template-columns:repeat(2,1fr);} }
-    .card{background:var(--gray-100);border-radius:8px;padding:1.5rem;}
-    footer{background:var(--gray-900);color:var(--white);padding:2rem 1rem;text-align:center;}
-    footer a{color:#c7ffd1;text-decoration:none;}
+    :root {
+      --navy:#1C3F60;
+      --green:#3B7A57;
+      --beige:#F9EFE4;
+      --gray:#F2F2F2;
+      --yellow:#FFD166;
+      --white:#fff;
+      --max:1200px;
+    }
+    body { margin:0; font-family:system-ui,sans-serif; line-height:1.6; color:var(--navy); background:var(--white); }
+    header { background:var(--navy); color:var(--white); padding:1rem 0; position:sticky; top:0; z-index:100; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; padding:0 1rem; }
+    nav a { margin-left:1rem; text-decoration:none; font-weight:600; color:var(--white); }
+    nav a:hover { color:var(--yellow); }
+    .banner { background:var(--navy); color:var(--white); text-align:center; padding:3rem 1rem; }
+    section { max-width:var(--max); margin:auto; padding:3rem 1rem; }
+    .block { border-radius:8px; padding:2rem; margin-bottom:1.5rem; }
+    h1, h2 { margin-top:0; }
+    .btn { display:inline-block; padding:0.7rem 1.2rem; border-radius:6px; font-weight:bold; text-decoration:none; }
+    .btn-green { background:var(--green); color:var(--white); }
+    footer { background:var(--navy); color:var(--white); text-align:center; padding:2rem 1rem; }
+    footer a { color:var(--yellow); text-decoration:none; }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <nav>
-      <div><strong>Devine Housing Solutions</strong></div>
+      <strong>Devine Housing Solutions</strong>
       <div>
         <a href="index.html">Home</a>
-        <a href="demographics.html">Demographics Served</a>
+        <a href="demographics.html">Demographics</a>
         <a href="our-care.html">Our Care</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html" class="btn">Contact Us</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
-  <section>
+  <!-- Banner -->
+  <div class="banner">
     <h1>Demographics We Serve</h1>
-    <p>We proudly provide <strong>affordable, all-inclusive housing</strong> for individuals across Columbia, SC and beyond. Our goal is to reduce homelessness and provide dignity, stability, and safety for every resident we serve.</p>
-    
-    <div class="grid grid-2">
-      <div class="card"><h2>Seniors (55+)</h2><p>Safe, affordable housing for older adults seeking stability and comfort.</p></div>
-      <div class="card"><h2>Veterans</h2><p>Housing that honors those who served, with dignity and respect.</p></div>
-      <div class="card"><h2>Recovery</h2><p>Supportive homes for individuals rebuilding their lives in sobriety.</p></div>
-      <div class="card"><h2>Re-Entry</h2><p>Housing for individuals transitioning back into the community after incarceration.</p></div>
-      <div class="card"><h2>Low-Income</h2><p>Affordable, all-inclusive housing for individuals facing financial hardship.</p></div>
-      <div class="card"><h2>Special Needs</h2><p>Accessible homes for individuals with disabilities or other special needs.</p></div>
+    <p>Providing affordable, all-inclusive housing for individuals in need across Columbia, SC and beyond.</p>
+  </div>
+
+  <!-- Content -->
+  <section>
+    <div class="block" style="background:var(--beige);">
+      <h2>Seniors (55+)</h2>
+      <p>Safe, stable, and affordable housing designed for older adults who want comfort, dignity, and a supportive environment as they age.</p>
+    </div>
+
+    <div class="block" style="background:var(--gray);">
+      <h2>Veterans</h2>
+      <p>Housing that honors those who have served, providing stability, respect, and support for veterans transitioning into affordable living.</p>
+    </div>
+
+    <div class="block" style="background:var(--white); border:2px solid var(--green);">
+      <h2>Recovery</h2>
+      <p>Supportive homes for individuals working to rebuild their lives in sobriety, offering stability and an environment of growth.</p>
+    </div>
+
+    <div class="block" style="background:var(--beige);">
+      <h2>Re-Entry</h2>
+      <p>Housing opportunities for individuals transitioning back into the community after incarceration, helping reduce homelessness and recidivism.</p>
+    </div>
+
+    <div class="block" style="background:var(--gray);">
+      <h2>Low-Income</h2>
+      <p>Affordable, all-inclusive housing for individuals facing financial challenges, ensuring access to a safe and dignified living space.</p>
+    </div>
+
+    <div class="block" style="background:var(--white); border:2px solid var(--yellow);">
+      <h2>Special Needs</h2>
+      <p>Accessible housing for individuals with disabilities or unique needs, ensuring comfort, safety, and inclusion in a supportive community.</p>
     </div>
   </section>
 
-  <!-- Optional demographic illustration/photo -->
-  <section>
-    <picture>
-      <source srcset="images/demographics.webp" type="image/webp">
-      <source srcset="images/demographics.png" type="image/png">
-      <source srcset="images/demographics.jpeg" type="image/jpeg">
-      <img src="images/demographics.jpg" alt="Housing demographics supported in Columbia SC" style="width:100%;border-radius:8px;">
-    </picture>
-  </section>
-
+  <!-- Footer -->
   <footer>
     <p>&copy; <span id="year"></span> Devine Housing Solutions • Columbia, SC</p>
-    <p>Phone: <a href="tel:18035001901">803-500-1901</a> • Email: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+    <p>Phone: <a href="tel:18035001901">803-500-1901</a> | Email: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
     <p>Address: REPLACE_WITH_ADDRESS_LATER</p>
   </footer>
+
   <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
