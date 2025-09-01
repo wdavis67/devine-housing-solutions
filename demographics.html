@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demographics We Serve | Devine Housing Solutions</title>
+  <meta name="description" content="Devine Housing Solutions offers affordable housing in Columbia, SC for seniors, veterans, recovery, re-entry populations, low-income residents, and special needs individuals." />
+  <meta name="theme-color" content="#1C3F60" />
+  <style>
+    :root {
+      --navy:#1C3F60;
+      --green:#3B7A57;
+      --beige:#F9EFE4;
+      --gray:#F2F2F2;
+      --yellow:#FFD166;
+      --white:#fff;
+      --max:1200px;
+    }
+    body { margin:0; font-family:system-ui,sans-serif; line-height:1.6; color:var(--navy); background:var(--white); }
+    header { background:var(--navy); color:var(--white); padding:1rem 0; position:sticky; top:0; z-index:100; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; padding:0 1rem; }
+    nav a { margin-left:1rem; text-decoration:none; font-weight:600; color:var(--white); }
+    nav a:hover { color:var(--yellow); }
+    .banner { background:var(--navy); color:var(--white); text-align:center; padding:3rem 1rem; }
+    section { max-width:var(--max); margin:auto; padding:3rem 1rem; }
+    .block { border-radius:8px; padding:2rem; margin-bottom:1.5rem; }
+    h1, h2 { margin-top:0; }
+    footer { background:var(--navy); color:var(--white); text-align:center; padding:2rem 1rem; }
+    footer a { color:var(--yellow); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <strong>Devine Housing Solutions</strong>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="demographics.html">Demographics</a>
+        <a href="our-care.html">Our Care</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Demographics We Serve</h1>
+    <p>Providing affordable, all-inclusive housing for individuals in need across Columbia, SC and beyond.</p>
+  </div>
+
+  <!-- Content -->
+  <section>
+    <div class="block" style="background:var(--beige);">
+      <h2>Seniors (55+)</h2>
+      <p>Safe, stable, and affordable housing designed for older adults who want comfort, dignity, and a supportive environment as they age.</p>
+    </div>
+
+    <div class="block" style="background:var(--gray);">
+      <h2>Veterans</h2>
+      <p>Housing that honors those who have served, providing stability, respect, and support for veterans transitioning into affordable living.</p>
+    </div>
+
+    <div class="block" style="background:var(--white); border:2px solid var(--green);">
+      <h2>Recovery</h2>
+      <p>Supportive homes for individuals working to rebuild their lives in sobriety, offering stability and an environment of growth.</p>
+    </div>
+
+    <div class="block" style="background:var(--beige);">
+      <h2>Re-Entry</h2>
+      <p>Housing opportunities for individuals transitioning back into the community after incarceration, helping reduce homelessness and recidivism.</p>
+    </div>
+
+    <div class="block" style="background:var(--gray);">
+      <h2>Low-Income</h2>
+      <p>Affordable, all-inclusive housing for individuals facing financial challenges, ensuring access to a safe and dignified living space.</p>
+    </div>
+
+    <div class="block" style="background:var(--white); border:2px solid var(--yellow);">
+      <h2>Special Needs</h2>
+      <p>Accessible housing for individuals with disabilities or unique needs, ensuring comfort, safety, and inclusion in a supportive community.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Devine Housing Solutions • Columbia, SC</p>
+    <p>Phone: <a href="tel:18035001901">803-500-1901</a> | Email: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
+    <p>Address: REPLACE_WITH_ADDRESS_LATER</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
