@@ -33,20 +33,36 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-  <nav>
-    <a href="index.html">
-      <img src="/logo.png" alt="Devine Housing Solutions Logo" style="height:60px; vertical-align:middle;">
-    </a>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="demographics.html">Demographics</a>
-      <a href="our-care.html">Our Care</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
+ /* Header + Navigation */
+header {
+  background: var(--navy);
+  padding: 0.5rem 1rem;
+}
+
+nav {
+  max-width: var(--max);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 60px;
+}
+
+nav .nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--white);
+  transition: color 0.2s;
+}
+
+nav .nav-links a:hover {
+  color: var(--yellow);
+}
+
 
   <!-- Banner -->
   <div class="banner">
