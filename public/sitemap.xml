@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.devinehousingsolutions.com/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.devinehousingsolutions.com/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.devinehousingsolutions.com/demographics.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.devinehousingsolutions.com/our-care.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.devinehousingsolutions.com/contact.html</loc>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://www.devinehousingsolutions.com/</loc></url>
+  <url><loc>https://www.devinehousingsolutions.com/about.html</loc></url>
+  <url><loc>https://www.devinehousingsolutions.com/demographics.html</loc></url>
+  <url><loc>https://www.devinehousingsolutions.com/our-care.html</loc></url>
+  <url><loc>https://www.devinehousingsolutions.com/contact.html</loc></url>
 </urlset>
