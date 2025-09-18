@@ -14,10 +14,10 @@
     nav .links a { margin-left:1.5rem; color:var(--white); text-decoration:none; font-weight:600; }
     nav .links a:hover { color:var(--yellow); }
     .banner { background:var(--green); color:var(--white); text-align:center; padding:3rem 1rem; }
-    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
-    .block { background:var(--white); padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; }
+    .block { background:var(--white); padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
     .block h2 { color:var(--green); margin-top:0; }
-    footer { background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer { grid-column:1/-1; background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
     footer a { color:var(--yellow); text-decoration:none; }
   </style>
 </head>
