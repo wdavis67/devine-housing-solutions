@@ -14,12 +14,10 @@
     nav .links a { margin-left:1.5rem; color:var(--white); text-decoration:none; font-weight:600; }
     nav .links a:hover { color:var(--yellow); }
     .banner { background:var(--green); color:var(--white); text-align:center; padding:3rem 1rem; }
-    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
-    .block { background:var(--white); padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .block h2 { color:var(--green); margin-top:0; }
-    ul { margin:0; padding-left:1.2rem; }
-    li { margin:0.4rem 0; }
-    footer { background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1.5rem; }
+    .block { background:var(--white); padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
+    .block h2 { color:var(--green); margin-top:0; font-size:1.2rem; }
+    footer { grid-column:1/-1; background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
     footer a { color:var(--yellow); text-decoration:none; }
   </style>
 </head>
@@ -43,19 +41,14 @@
   </div>
 
   <section>
-    <div class="block">
-      <h2>Available Services</h2>
-      <ul>
-        <li>Doctor / Nurse home visits</li>
-        <li>Home health services (RN, Physical, Occupational, and Speech Therapy)</li>
-        <li>Hospice and palliative support</li>
-        <li>Durable medical equipment</li>
-        <li>Case management</li>
-        <li>Social work services</li>
-        <li>Behavioral counseling and therapy</li>
-        <li>Medication management</li>
-      </ul>
-    </div>
+    <div class="block"><h2>Doctor & Nurse Home Visits</h2><p>On-site healthcare visits to support ongoing medical needs.</p></div>
+    <div class="block"><h2>Home Health Services</h2><p>RN, Physical, Occupational, and Speech Therapy available at home.</p></div>
+    <div class="block"><h2>Hospice Support</h2><p>Compassionate care for residents with serious or terminal illness.</p></div>
+    <div class="block"><h2>Durable Medical Equipment</h2><p>Access to essential equipment that supports independence and mobility.</p></div>
+    <div class="block"><h2>Case Management</h2><p>Guidance and coordination of resources tailored to each resident’s needs.</p></div>
+    <div class="block"><h2>Social Work</h2><p>Support for residents navigating social and personal challenges.</p></div>
+    <div class="block"><h2>Behavioral Counseling</h2><p>Therapy and counseling services for mental and emotional well-being.</p></div>
+    <div class="block"><h2>Medication Management</h2><p>Assistance with proper medication use to maintain health and safety.</p></div>
   </section>
 
   <footer>
