@@ -14,12 +14,10 @@
     nav .links a { margin-left:1.5rem; color:var(--white); text-decoration:none; font-weight:600; }
     nav .links a:hover { color:var(--yellow); }
     .banner { background:var(--green); color:var(--white); text-align:center; padding:3rem 1rem; }
-    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
-    .block { background:var(--white); padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1.5rem; }
+    .block { background:var(--white); padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
     .block h2 { color:var(--green); margin-top:0; }
-    ul { margin:0; padding-left:1.2rem; }
-    li { margin:0.4rem 0; }
-    footer { background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer { grid-column:1/-1; background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
     footer a { color:var(--yellow); text-decoration:none; }
   </style>
 </head>
@@ -43,17 +41,12 @@
   </div>
 
   <section>
-    <div class="block">
-      <h2>Our Residents</h2>
-      <ul>
-        <li>Seniors</li>
-        <li>Veterans</li>
-        <li>Individuals in recovery</li>
-        <li>Returning citizens</li>
-        <li>Low-income residents</li>
-        <li>People with special needs</li>
-      </ul>
-    </div>
+    <div class="block"><h2>Seniors</h2><p>Safe, supportive homes designed to promote dignity, independence, and comfort for older adults.</p></div>
+    <div class="block"><h2>Veterans</h2><p>Housing solutions that honor service and provide stability for those who served our country.</p></div>
+    <div class="block"><h2>Individuals in Recovery</h2><p>Structured and supportive housing for people rebuilding their lives free from substance use.</p></div>
+    <div class="block"><h2>Returning Citizens</h2><p>Transitional housing that supports re-entry into society with dignity and opportunity.</p></div>
+    <div class="block"><h2>Low-Income Residents</h2><p>Affordable, all-inclusive homes to reduce financial strain and provide stability.</p></div>
+    <div class="block"><h2>People with Special Needs</h2><p>Safe and inclusive housing tailored for individuals who need extra support.</p></div>
   </section>
 
   <footer>
