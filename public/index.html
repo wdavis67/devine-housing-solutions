@@ -5,101 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devine Housing Solutions</title>
   <meta name="description" content="Affordable, all-inclusive housing in Columbia, SC. Seniors, veterans, recovery, re-entry, low-income, and special needs residents.">
-
   <style>
-    :root {
-      --navy: #1C3F60;
-      --green: #3B7A57;
-      --beige: #F9EFE4;
-      --gray: #F2F2F2;
-      --yellow: #FFD166;
-      --white: #ffffff;
-      --max: 1200px;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--beige);
-      color: var(--navy);
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      background: var(--navy);
-      padding: 0.5rem 1rem;
-    }
-    nav {
-      max-width: var(--max);
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav img {
-      height: 60px;
-      background: white;      /* make logo visible */
-      padding: 4px;
-      border-radius: 6px;
-    }
-    nav .links a {
-      margin-left: 1.5rem;
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav .links a:hover {
-      color: var(--yellow);
-    }
-
-    /* Banner */
-    .banner {
-      background: var(--green);
-      color: var(--white);
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .banner h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    /* Content Blocks */
-    section {
-      max-width: var(--max);
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .block {
-      background: var(--white);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .block h2 {
-      color: var(--green);
-      margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--navy);
-      color: var(--white);
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: var(--yellow);
-      text-decoration: none;
-    }
+    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --gray:#F2F2F2; --yellow:#FFD166; --white:#fff; --max:1200px; }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
+    header { background:var(--navy); padding:0.5rem 1rem; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:white; padding:4px; border-radius:6px; }
+    nav .links a { margin-left:1.5rem; color:var(--white); text-decoration:none; font-weight:600; }
+    nav .links a:hover { color:var(--yellow); }
+    /* Contact nav button */
+    nav .links .btn { background:var(--green); color:var(--white); padding:0.5rem 1rem; border-radius:4px; margin-left:1.5rem; }
+    nav .links .btn:hover { background:var(--yellow); color:var(--navy); }
+    .banner { background:var(--green); color:var(--white); text-align:center; padding:3rem 1rem; }
+    .banner h1 { font-size:2.5rem; margin:0; }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
+    .block { background:var(--white); padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .block h2 { color:var(--green); margin-top:0; }
+    footer { background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer a { color:var(--yellow); text-decoration:none; }
+    .btn { display:inline-block; background:var(--green); color:var(--white); padding:0.75rem 1.5rem; text-decoration:none; font-weight:600; border-radius:6px; transition:background 0.3s ease; }
+    .btn:hover { background:var(--yellow); color:var(--navy); }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <nav>
       <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
@@ -108,42 +36,33 @@
         <a href="demographics.html">Demographics</a>
         <a href="our-care.html">Our Care</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn">Contact</a>
       </div>
     </nav>
   </header>
-
-  <!-- Banner -->
   <div class="banner">
     <h1>Welcome to Devine Housing Solutions</h1>
     <p>Providing affordable, all-inclusive housing in Columbia, SC and beyond.</p>
   </div>
-
-  <!-- Main Content -->
   <section>
     <div class="block">
       <h2>Our Mission</h2>
       <p>At Devine Housing Solutions, our mission is to reduce homelessness and provide dignity, stability, and hope through safe and supportive housing. We serve seniors, veterans, those in recovery, returning citizens, low-income residents, and individuals with special needs.</p>
     </div>
-
     <div class="block">
       <h2>All-Inclusive Housing</h2>
       <p>Our homes are fully furnished, with utilities included, and located in safe neighborhoods with easy access to transportation and community resources. We ensure a welcoming environment where every resident feels supported and valued.</p>
     </div>
-
     <div class="block">
       <h2>Referrals Accepted Nationwide</h2>
       <p>While we are based in Columbia, SC, we accept referrals from across the United States. Case managers, agencies, and healthcare providers can connect individuals in need of affordable, supportive housing with us today.</p>
       <a href="contact.html" class="btn">Make a Referral</a>
     </div>
   </section>
-
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Devine Housing Solutions | 
       <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> | 
       803-500-1901</p>
   </footer>
-
 </body>
 </html>
