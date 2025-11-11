@@ -1,4 +1,50 @@
-<url>
-  <loc>https://www.devinehousingsolutions.com/referral.html</loc>
-  <priority>0.8</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/about.html</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Demographics -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/demographics.html</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Our Care -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/our-care.html</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Referral -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/referral.html</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.devinehousingsolutions.com/contact.html</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
