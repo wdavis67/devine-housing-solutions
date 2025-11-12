@@ -4,52 +4,157 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Referral | Devine Housing Solutions</title>
-  <meta name="description" content="Submit a housing referral to Devine Housing Solutions. We accept referrals for individuals including seniors, veterans, recovery, re-entry, low-income, and special needs." />
+  <meta name="description" content="Submit a housing referral to Devine Housing Solutions in Columbia, SC. We accept referrals for individuals including seniors, veterans, recovery, re-entry, low-income, and special needs residents." />
   <style>
-    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --gray:#F2F2F2; --yellow:#FFD166; --white:#fff; --max:1200px; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,sans-serif;background:var(--beige);color:var(--navy);line-height:1.6;}
-    header{background:var(--navy);padding:.5rem 1rem;}
-    nav{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;align-items:center;}
-    nav img{height:60px;background:white;padding:4px;border-radius:6px;}
-    nav .links a{margin-left:1.5rem;color:var(--white);text-decoration:none;font-weight:600;}
-    nav .links a:hover{color:var(--yellow);}
-    /* Contact nav button */
-    nav .links .btn{background:var(--green);color:var(--white);padding:.5rem 1rem;border-radius:4px;margin-left:1.5rem;}
-    nav .links .btn:hover{background:var(--yellow);color:var(--navy);}
-
-    .banner{background:var(--green);color:var(--white);text-align:center;padding:3rem 1rem;}
-    .banner h1{margin:0;font-size:2.2rem}
-
-    section{max-width:var(--max);margin:2rem auto;padding:0 1rem;}
-    .block{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1);margin-bottom:1.25rem;}
-
-    /* Form */
-    form .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;}
-    label{display:block;font-weight:600;margin:.25rem 0 .35rem;}
-    input, select, textarea{
-      width:100%;padding:.7rem;border:1px solid #cfd4d9;border-radius:6px;background:#fff;color:#1C3F60;
+    :root {
+      --navy:#1C3F60;
+      --green:#3B7A57;
+      --beige:#F9EFE4;
+      --gray:#F2F2F2;
+      --yellow:#FFD166;
+      --white:#fff;
+      --max:1200px;
     }
-    textarea{min-height:120px;resize:vertical;}
-    .muted{color:#333;margin:.25rem 0 1rem;font-size:.95rem}
-    .inline{display:flex;align-items:center;gap:.5rem;margin-top:.5rem}
-    .hint{font-size:.9rem;color:#444;margin-top:.25rem}
 
-    .cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
-    .btn{
-      display:inline-block;background:var(--green);color:var(--white);
-      padding:.75rem 1.25rem;text-decoration:none;font-weight:600;border-radius:6px;
-      transition:background .3s ease;
+    * { box-sizing: border-box; }
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: var(--beige);
+      color: var(--navy);
+      line-height: 1.6;
     }
-    .btn:hover{background:var(--yellow);color:var(--navy);}
-    .btn.secondary{background:#eee;color:#1C3F60;}
-    .btn.secondary:hover{background:#ddd;}
 
-    footer{background:var(--navy);color:var(--white);text-align:center;padding:1.5rem;margin-top:2rem;}
-    footer a{color:var(--yellow);text-decoration:none;}
+    header { background: var(--navy); padding: 0.5rem 1rem; }
+    nav {
+      max-width: var(--max);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav img {
+      height: 60px;
+      background: white;
+      padding: 4px;
+      border-radius: 6px;
+    }
+    nav .links a {
+      margin-left: 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav .links a:hover { color: var(--yellow); }
+    nav .links .btn {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin-left: 1.5rem;
+    }
+    nav .links .btn:hover {
+      background: var(--yellow);
+      color: var(--navy);
+    }
+
+    .banner {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .banner h1 { margin: 0; font-size: 2.2rem; }
+
+    section {
+      max-width: var(--max);
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .block {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 1.25rem;
+    }
+
+    form .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 0.25rem 0 0.35rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #cfd4d9;
+      border-radius: 6px;
+      background: #fff;
+      color: #1C3F60;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+
+    .inline {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .hint {
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 0.25rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: var(--yellow);
+      color: var(--navy);
+    }
+    .btn.secondary {
+      background: #eee;
+      color: #1C3F60;
+    }
+    .btn.secondary:hover {
+      background: #ddd;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer a { color: var(--yellow); text-decoration: none; }
   </style>
 </head>
 <body>
+
   <header>
     <nav>
       <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
@@ -66,12 +171,12 @@
 
   <div class="banner">
     <h1>Referral Form</h1>
-    <p>We accept referrals across the United States. Please complete the form below.</p>
+    <p>We accept referrals from across the United States. Please complete the form below.</p>
   </div>
 
   <section>
     <div class="block">
-      <h2 style="margin-top:0;color:var(--green)">Referrer Information</h2>
+      <h2 style="color:var(--green)">Referrer Information</h2>
       <form id="referralForm">
         <div class="form-grid">
           <div>
@@ -92,7 +197,7 @@
           </div>
         </div>
 
-        <h2 style="color:var(--green);margin-top:1.25rem">Resident Information</h2>
+        <h2 style="color:var(--green);margin-top:1.25rem;">Resident Information</h2>
         <div class="form-grid">
           <div>
             <label for="residentName">Resident Name *</label>
@@ -124,14 +229,14 @@
           </div>
           <div>
             <label for="funding">Funding / Insurance</label>
-            <input id="funding" name="funding" type="text" placeholder="e.g., SSI, Medicaid Waiver, Private Pay">
+            <input id="funding" name="funding" type="text" placeholder="e.g., SSI, Medicaid, Private Pay">
           </div>
         </div>
 
-        <div style="margin-top:1rem">
+        <div style="margin-top:1rem;">
           <label for="notes">Notes / Needs / Safety Considerations</label>
-          <textarea id="notes" name="notes" placeholder="Brief summary that helps us place the resident appropriately"></textarea>
-          <p class="hint">Do not include sensitive medical records. Share only what is needed to support housing placement.</p>
+          <textarea id="notes" name="notes" placeholder="Provide brief details to help us place the resident appropriately"></textarea>
+          <p class="hint">Do not include sensitive medical records. Share only what is needed for placement.</p>
         </div>
 
         <div class="inline">
@@ -144,42 +249,42 @@
           <button type="reset" class="btn secondary">Clear Form</button>
         </div>
 
-        <p class="muted">Having trouble with the form? You can also submit by email below.</p>
+        <p style="margin-top:1rem;">Having trouble with the form? You can also submit by email below.</p>
       </form>
     </div>
 
     <div class="block">
-      <h2 style="margin-top:0;color:var(--green)">Submit a Referral by Email</h2>
+      <h2 style="color:var(--green)">Submit a Referral by Email</h2>
       <p>Prefer email? Click below to open your email with a pre-filled template.</p>
-      <a id="emailReferralBtn" class="btn" href="mailto:info@devinehousingsolutions.com?subject=Referral%20-%20Devine%20Housing%20Solutions&body=Please%20include%20the%20following%20details:%0A%0AReferrer%20Name:%0AOrganization:%0APhone:%0AEmail:%0A%0AResident%20Name:%0ADemographic:%0ACity,%20State:%0ATarget%20Move-In:%0AFunding/Insurance:%0A%0ANotes:%0A">Submit a Referral by Email</a>
+      <a class="btn" href="mailto:info@devinehousingsolutions.com?subject=Referral%20-%20Devine%20Housing%20Solutions&body=Please%20include%20the%20following%20details:%0A%0AReferrer%20Name:%0AOrganization:%0APhone:%0AEmail:%0A%0AResident%20Name:%0ADemographic:%0ACity,%20State:%0ATarget%20Move-In:%0AFunding/Insurance:%0A%0ANotes:%0A">Submit a Referral by Email</a>
       <p class="hint">If clicking doesn’t open your email, copy this address: <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Devine Housing Solutions |
-      <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
+    <p>&copy; 2025 Devine Housing Solutions | 
+      <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> | 
       803-500-1901
     </p>
   </footer>
 
   <script>
-    // Build an email from form fields (works with default mail client)
-    document.getElementById('referralForm').addEventListener('submit', function (e) {
+    document.getElementById('referralForm').addEventListener('submit', function(e) {
       e.preventDefault();
+
       const get = id => (document.getElementById(id).value || '').trim();
 
       const referrerName = get('referrerName');
       const organization = get('organization');
       const referrerPhone = get('referrerPhone');
       const referrerEmail = get('referrerEmail');
-      const residentName  = get('residentName');
-      const demographic   = get('demographic');
-      const city          = get('city');
-      const state         = get('state');
-      const moveIn        = get('moveIn');
-      const funding       = get('funding');
-      const notes         = get('notes');
+      const residentName = get('residentName');
+      const demographic = get('demographic');
+      const city = get('city');
+      const state = get('state');
+      const moveIn = get('moveIn');
+      const funding = get('funding');
+      const notes = get('notes');
 
       const subject = encodeURIComponent(`New Referral - ${residentName || 'Resident'}`);
       const bodyLines = [
@@ -201,9 +306,9 @@
       ];
       const body = encodeURIComponent(bodyLines.join('\n'));
 
-      const mailto = `mailto:info@devinehousingsolutions.com?subject=${subject}&body=${body}`;
-      window.location.href = mailto;
+      window.location.href = `mailto:info@devinehousingsolutions.com?subject=${subject}&body=${body}`;
     });
   </script>
+
 </body>
 </html>
