@@ -3,53 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demographics | Devine Housing Solutions</title>
-  <meta name="description" content="Learn about the diverse groups served by Devine Housing Solutions in Columbia, SC.">
+  <title>Demographics We Serve | Devine Housing Solutions</title>
+  <meta name="description" content="Learn about the populations served by Devine Housing Solutions, including seniors, veterans, re-entry, recovery, low-income, and special needs individuals.">
   <style>
-    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --gray:#F2F2F2; --yellow:#FFD166; --white:#fff; --max:1200px; }
-    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
-    header { background:var(--navy); padding:0.5rem 1rem; }
+    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --yellow:#FFD166; --white:#fff; --max:1200px; }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); }
+    header { background:var(--navy); padding:.5rem 1rem; }
     nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
-    nav img { height:60px; background:white; padding:4px; border-radius:6px; }
-    nav .links a { margin-left:1.5rem; color:var(--white); text-decoration:none; font-weight:600; }
-    nav .links a:hover { color:var(--yellow); }
-    nav .links .btn { background:var(--green); color:var(--white); padding:0.5rem 1rem; border-radius:4px; margin-left:1.5rem; }
-    nav .links .btn:hover { background:var(--yellow); color:var(--navy); }
-    .banner { background:var(--green); color:var(--white); text-align:center; padding:3rem 1rem; }
-    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1.5rem; }
-    .block { background:var(--white); padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
-    .block h2 { color:var(--green); margin-top:0; }
-    footer { grid-column:1/-1; background:var(--navy); color:var(--white); text-align:center; padding:1.5rem; margin-top:2rem; }
-    footer a { color:var(--yellow); text-decoration:none; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav .links a { margin-left:1.5rem; color:#fff; text-decoration:none; font-weight:600; }
+    nav .links .btn { background:var(--green); padding:.5rem 1rem; border-radius:4px; }
+
+    .banner img { width:100%; max-height:400px; object-fit:cover; display:block; }
+
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem;
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .block { background:#fff; padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); text-align:center; }
+    .block h2 { color:var(--green); }
+
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="demographics.html">Demographics</a>
-        <a href="our-care.html">Our Care</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </div>
-    </nav>
-  </header>
-  <div class="banner">
-    <h1>Who We Serve</h1>
-    <p>Creating housing solutions for individuals in need of stability and care</p>
-  </div>
-  <section>
-    <div class="block"><h2>Seniors</h2><p>Safe, supportive homes designed to promote dignity, independence, and comfort for older adults.</p></div>
-    <div class="block"><h2>Veterans</h2><p>Housing solutions that honor service and provide stability for those who served our country.</p></div>
-    <div class="block"><h2>Individuals in Recovery</h2><p>Structured and supportive housing for people rebuilding their lives free from substance use.</p></div>
-    <div class="block"><h2>Returning Citizens</h2><p>Transitional housing that supports re-entry into society with dignity and opportunity.</p></div>
-    <div class="block"><h2>Low-Income Residents</h2><p>Affordable, all-inclusive homes to reduce financial strain and provide stability.</p></div>
-    <div class="block"><h2>People with Special Needs</h2><p>Safe and inclusive housing tailored for individuals who need extra support.</p></div>
-  </section>
-  <footer>
-    <p>&copy; 2025 Devine Housing Solutions | <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> | 803-500-1901</p>
-  </footer>
+
+<header>
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="banner">
+  <img src="images/community-support.jpg" alt="Adults receiving supportive housing services">
+</div>
+
+<section>
+  <div class="block"><h2>Seniors</h2><p>Supportive housing promoting safety, dignity, and independence.</p></div>
+  <div class="block"><h2>Veterans</h2><p>Stable housing environments honoring service and sacrifice.</p></div>
+  <div class="block"><h2>Recovery</h2><p>Structured housing supporting sobriety and stability.</p></div>
+  <div class="block"><h2>Re-Entry</h2><p>Housing solutions for returning citizens rebuilding their lives.</p></div>
+  <div class="block"><h2>Low-Income</h2><p>Affordable, all-inclusive housing options.</p></div>
+  <div class="block"><h2>Special Needs</h2><p>Safe housing with access to support services.</p></div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Devine Housing Solutions</p>
+</footer>
+
 </body>
 </html>
