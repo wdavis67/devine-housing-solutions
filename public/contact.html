@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Devine Housing Solutions</title>
-  <meta name="description" content="Contact Devine Housing Solutions in Columbia, SC. We accept housing referrals nationwide and support individuals through affordable, all-inclusive housing.">
+  <meta name="description" content="Contact Devine Housing Solutions in Columbia, SC. We accept referrals nationwide for supportive, affordable, all-inclusive housing for individuals.">
   <style>
     :root {
       --navy:#1C3F60;
@@ -15,109 +15,25 @@
       --max:1200px;
     }
 
-    body {
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:var(--beige);
-      color:var(--navy);
-      line-height:1.6;
-    }
+    body { margin:0; font-family:Arial, sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
+    header { background:var(--navy); padding:0.5rem 1rem; }
 
-    header {
-      background:var(--navy);
-      padding:0.5rem 1rem;
-    }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav .links a { margin-left:1.5rem; color:#fff; text-decoration:none; font-weight:600; }
+    nav .links a:hover { color:var(--yellow); }
+    nav .links .btn { background:var(--green); padding:0.5rem 1rem; border-radius:4px; }
+    nav .links .btn:hover { background:var(--yellow); color:var(--navy); }
 
-    nav {
-      max-width:var(--max);
-      margin:auto;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+    .banner { background:var(--green); color:#fff; text-align:center; padding:3rem 1rem; }
+    .banner h1 { margin:0; font-size:2.2rem; }
 
-    nav img {
-      height:60px;
-      background:#fff;
-      padding:4px;
-      border-radius:6px;
-    }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
+    .block { background:#fff; padding:1.75rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .block h2 { color:var(--green); margin-top:0; }
 
-    nav .links a {
-      margin-left:1.5rem;
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    nav .links a:hover {
-      color:var(--yellow);
-    }
-
-    nav .links .btn {
-      background:var(--green);
-      padding:0.5rem 1rem;
-      border-radius:4px;
-    }
-
-    nav .links .btn:hover {
-      background:var(--yellow);
-      color:var(--navy);
-    }
-
-    .banner {
-      background:var(--green);
-      color:#fff;
-      text-align:center;
-      padding:3rem 1rem;
-    }
-
-    .banner h1 {
-      margin:0;
-      font-size:2.2rem;
-    }
-
-    section {
-      max-width:var(--max);
-      margin:2rem auto;
-      padding:0 1rem;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:1.5rem;
-    }
-
-    .block {
-      background:#fff;
-      padding:1.75rem;
-      border-radius:6px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .block h2 {
-      color:var(--green);
-      margin-top:0;
-    }
-
-    .contact-info p {
-      margin:0.5rem 0;
-    }
-
-    .cta-referral {
-      background:var(--navy);
-      color:#fff;
-      padding:2rem;
-      border-radius:6px;
-      text-align:center;
-    }
-
-    .cta-referral h2 {
-      color:var(--yellow);
-      margin-top:0;
-    }
-
-    .cta-referral p {
-      margin:1rem 0;
-    }
+    .cta-referral { background:var(--navy); color:#fff; padding:2rem; border-radius:6px; text-align:center; }
+    .cta-referral h2 { color:var(--yellow); margin-top:0; }
 
     .btn-main {
       display:inline-block;
@@ -129,23 +45,10 @@
       font-weight:700;
       font-size:1.05rem;
     }
+    .btn-main:hover { background:#ffdf85; }
 
-    .btn-main:hover {
-      background:#ffdf85;
-    }
-
-    footer {
-      background:var(--navy);
-      color:#fff;
-      text-align:center;
-      padding:1.5rem;
-      margin-top:2rem;
-    }
-
-    footer a {
-      color:var(--yellow);
-      text-decoration:none;
-    }
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer a { color:var(--yellow); text-decoration:none; }
   </style>
 </head>
 <body>
@@ -170,36 +73,28 @@
 </div>
 
 <section>
-  <!-- Contact Information -->
-  <div class="block contact-info">
+  <div class="block">
+    <h2>Serving Columbia, SC and Surrounding Areas</h2>
+    <p><strong>We provide supportive, all-inclusive housing in Columbia, South Carolina and surrounding areas including Lexington, Irmo, Cayce, West Columbia, Forest Acres, Sumter, Camden, Newberry, and Orangeburg.</strong></p>
+    <p>We also accept referrals across America through agencies, case managers, and healthcare partners.</p>
+  </div>
+
+  <div class="block">
     <h2>Get in Touch</h2>
     <p><strong>Phone:</strong> <a href="tel:18035001901">803-500-1901</a></p>
     <p><strong>Email:</strong> <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a></p>
-    <p>
-      Devine Housing Solutions provides affordable, all-inclusive housing in the
-      Columbia, South Carolina area. We work closely with agencies, case managers,
-      healthcare providers, and referral partners nationwide.
-    </p>
+    <p>Please contact us to discuss referrals, availability, partnerships, or care coordination.</p>
   </div>
 
-  <!-- Referral Call to Action -->
   <div class="cta-referral">
     <h2>Need to Submit a Housing Referral?</h2>
-    <p>
-      We accept referrals from across the United States for individuals in need of
-      safe, supportive housing.
-    </p>
-    <p>
-      Our referral form is designed for case managers, agencies, and providers to
-      easily submit placement information.
-    </p>
+    <p>Use our referral form to send placement details quickly and clearly.</p>
     <a href="referral.html" class="btn-main">Go to Referral Form</a>
   </div>
 </section>
 
 <footer>
-  <p>
-    &copy; 2025 Devine Housing Solutions |
+  <p>&copy; 2025 Devine Housing Solutions |
     <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
     803-500-1901
   </p>
@@ -207,4 +102,3 @@
 
 </body>
 </html>
-
