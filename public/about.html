@@ -16,33 +16,50 @@
   </script>
 
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#F9EFE4; color:#1C3F60; }
-    header, footer { background:#1C3F60; color:#fff; padding:1rem; text-align:center; }
+    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --yellow:#FFD166; --white:#fff; --max:1200px; }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); }
+    header { background:var(--navy); padding:.75rem 1rem; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
+    nav a:hover { color:var(--yellow); }
     main { max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:6px; }
-    h1, h2 { color:#3B7A57; }
-    a { color:#FFD166; }
+    h1,h2 { color:var(--green); }
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>About Devine Housing Solutions</h1>
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
+  <h1>About Devine Housing Solutions</h1>
+
   <p><strong>
     We provide supportive, all-inclusive housing in Columbia, South Carolina and surrounding areas including Lexington, Irmo, Cayce, West Columbia, Forest Acres, Sumter, Camden, Newberry, and Orangeburg.
   </strong></p>
 
-  <h2>Our Purpose</h2>
+  <h2>Our Mission</h2>
   <p>
-    Devine Housing Solutions was created to address housing instability and reduce homelessness by offering safe, supportive living environments for individuals with diverse needs.
+    Devine Housing Solutions exists to reduce homelessness by providing safe, stable, and supportive housing for individuals who need dignity, structure, and long-term stability.
   </p>
 
   <h2>Our Commitment</h2>
   <p>
-    Our homes are designed to provide dignity, structure, and access to coordinated care. We partner with agencies, case managers, and healthcare providers to support long-term stability.
+    We partner with agencies, case managers, and healthcare providers to ensure residents have access to coordinated services that promote independence and long-term success.
   </p>
 </main>
 
