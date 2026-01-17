@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Supportive Housing in Columbia, SC | Devine Housing Solutions</title>
-  <meta name="description" content="Devine Housing Solutions provides supportive, affordable, all-inclusive housing in Columbia, SC and surrounding areas. Referrals accepted nationwide.">
+  <meta name="description" content="Supportive, affordable, all-inclusive housing in Columbia, SC and surrounding areas. Serving seniors, veterans, re-entry, recovery, low-income, and special needs individuals.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics -->
@@ -19,4 +19,76 @@
     :root {
       --navy:#1C3F60;
       --green:#3B7A57;
-      --beige
+      --beige:#F9EFE4;
+      --yellow:#FFD166;
+      --white:#ffffff;
+      --max:1200px;
+    }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
+    header { background:var(--navy); padding:.75rem 1rem; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
+    nav a:hover { color:var(--yellow); }
+    .hero img { width:100%; max-height:480px; object-fit:cover; }
+    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
+    .card { background:#fff; padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+    .card h2 { color:var(--green); }
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; }
+    footer a { color:var(--yellow); }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="images/hero-home.jpg" alt="Supportive housing in Columbia SC">
+</div>
+
+<section>
+  <div class="card">
+    <h2>Serving Columbia, SC and Surrounding Areas</h2>
+    <p><strong>
+      We provide supportive, all-inclusive housing in Columbia, South Carolina and surrounding areas including Lexington, Irmo, Cayce, West Columbia, Forest Acres, Sumter, Camden, Newberry, and Orangeburg.
+    </strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Our Mission</h2>
+    <p>
+      Devine Housing Solutions is committed to reducing homelessness by providing safe, stable, and supportive housing for individuals who need structure, dignity, and long-term stability.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Who We Serve</h2>
+    <p>
+      We serve seniors, veterans, individuals in recovery, returning citizens, low-income individuals, and people with special needs. Referrals are accepted nationwide.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 Devine Housing Solutions |
+    <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
+    803-500-1901
+  </p>
+</footer>
+
+</body>
+</html>
