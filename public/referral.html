@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Referral Form | Devine Housing Solutions</title>
-  <meta name="description" content="Submit a housing referral for supportive housing in Columbia, SC with Devine Housing Solutions.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Referral | Devine Housing Solutions</title>
+  <meta name="description" content="Submit a housing referral to Devine Housing Solutions in Columbia, SC. Referrals accepted nationwide for individuals including re-entry, recovery, low-income, and special needs populations.">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
@@ -16,32 +16,201 @@
   </script>
 
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#F9EFE4; color:#1C3F60; }
-    header, footer { background:#1C3F60; color:#fff; padding:1rem; text-align:center; }
-    main { max-width:800px; margin:2rem auto; background:#fff; padding:2rem; border-radius:6px; }
-    h1 { color:#3B7A57; }
+    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --yellow:#FFD166; --white:#fff; --max:1200px; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--beige); color:var(--navy); font-family:Arial,sans-serif; line-height:1.6; }
+
+    header { background:var(--navy); padding:.75rem 1rem; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
+    nav a:hover { color:var(--yellow); }
+
+    main { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
+    .card { background:#fff; padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); margin-bottom:1.25rem; }
+    .card h1, .card h2 { color:var(--green); margin-top:0; }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
+    label { display:block; font-weight:600; margin:.25rem 0 .35rem; }
+    input, select, textarea { width:100%; padding:.7rem; border:1px solid #cfd4d9; border-radius:6px; }
+    textarea { min-height:120px; resize:vertical; }
+    .inline { display:flex; gap:.5rem; align-items:center; margin-top:.75rem; }
+    .hint { font-size:.9rem; color:#444; margin-top:.35rem; }
+
+    .btn-row { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1rem; }
+    button, .email-btn {
+      background:var(--green); color:#fff; border:none; cursor:pointer;
+      padding:.85rem 1.25rem; border-radius:6px; font-weight:700; text-decoration:none; display:inline-block;
+    }
+    button:hover, .email-btn:hover { background:var(--yellow); color:var(--navy); }
+
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer a { color:var(--yellow); }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Submit a Referral</h1>
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
-  <p>
-    Please email referral details to:
-    <strong>info@devinehousingsolutions.com</strong>
-  </p>
-  <p>
-    Referrals are accepted nationwide for individuals needing supportive, all-inclusive housing.
-  </p>
+  <div class="card">
+    <h1>Submit a Referral</h1>
+    <p>
+      We are located in the Columbia, SC area and accept referrals across America. Use the form below to create a referral email to
+      <strong>info@devinehousingsolutions.com</strong>.
+    </p>
+
+    <form id="referralForm" novalidate>
+      <h2>Referrer Information</h2>
+      <div class="grid">
+        <div>
+          <label for="referrerName">Your Name *</label>
+          <input id="referrerName" type="text" required placeholder="Full name">
+        </div>
+        <div>
+          <label for="organization">Organization</label>
+          <input id="organization" type="text" placeholder="Agency / Hospital / Case Mgmt">
+        </div>
+        <div>
+          <label for="referrerPhone">Phone *</label>
+          <input id="referrerPhone" type="tel" required placeholder="e.g., 803-555-1234">
+        </div>
+        <div>
+          <label for="referrerEmail">Email *</label>
+          <input id="referrerEmail" type="email" required placeholder="you@agency.org">
+        </div>
+      </div>
+
+      <h2 style="margin-top:1.25rem;">Resident Information</h2>
+      <div class="grid">
+        <div>
+          <label for="residentName">Resident Name *</label>
+          <input id="residentName" type="text" required placeholder="Full name">
+        </div>
+        <div>
+          <label for="demographic">Demographic *</label>
+          <select id="demographic" required>
+            <option value="">Select one…</option>
+            <option>Seniors (55+)</option>
+            <option>Veterans</option>
+            <option>Individuals in Recovery</option>
+            <option>Returning Citizens (Re-entry)</option>
+            <option>Low-Income</option>
+            <option>Special Needs</option>
+          </select>
+        </div>
+        <div>
+          <label for="city">City *</label>
+          <input id="city" type="text" required placeholder="Columbia">
+        </div>
+        <div>
+          <label for="state">State *</label>
+          <input id="state" type="text" required placeholder="SC">
+        </div>
+        <div>
+          <label for="moveIn">Target Move-In Date</label>
+          <input id="moveIn" type="date">
+        </div>
+        <div>
+          <label for="funding">Funding / Insurance</label>
+          <input id="funding" type="text" placeholder="e.g., SSI, Medicaid, Private Pay">
+        </div>
+      </div>
+
+      <div style="margin-top:1rem;">
+        <label for="notes">Notes / Needs / Safety Considerations</label>
+        <textarea id="notes" placeholder="Brief details to support appropriate placement"></textarea>
+        <p class="hint">Please do not include full medical records. Share only what is needed for housing placement.</p>
+      </div>
+
+      <div class="inline">
+        <input id="consent" type="checkbox" required>
+        <label for="consent">I confirm I have permission to share this information for housing referral purposes.</label>
+      </div>
+
+      <div class="btn-row">
+        <button type="submit">Create Referral Email</button>
+        <a class="email-btn" href="mailto:info@devinehousingsolutions.com?subject=Referral%20-%20Devine%20Housing%20Solutions&body=Please%20include%20the%20following%20details:%0A%0AReferrer%20Name:%0AOrganization:%0APhone:%0AEmail:%0A%0AResident%20Name:%0ADemographic:%0ACity,%20State:%0ATarget%20Move-In:%0AFunding/Insurance:%0A%0ANotes:%0A">
+          Submit by Email Template
+        </a>
+      </div>
+    </form>
+  </div>
 </main>
 
 <footer>
-  © 2025 Devine Housing Solutions
+  <p>
+    © 2025 Devine Housing Solutions |
+    <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
+    803-500-1901
+  </p>
 </footer>
+
+<script>
+  document.getElementById('referralForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const must = (id, label) => {
+      const v = (document.getElementById(id).value || '').trim();
+      if (!v) throw new Error(label + " is required.");
+      return v;
+    };
+    const opt = (id) => (document.getElementById(id).value || '').trim();
+
+    try {
+      if (!document.getElementById('consent').checked) throw new Error("Consent checkbox is required.");
+
+      const referrerName  = must('referrerName', 'Your Name');
+      const referrerPhone = must('referrerPhone', 'Phone');
+      const referrerEmail = must('referrerEmail', 'Email');
+      const residentName  = must('residentName', 'Resident Name');
+      const demographic   = must('demographic', 'Demographic');
+      const city          = must('city', 'City');
+      const state         = must('state', 'State');
+
+      const organization = opt('organization');
+      const moveIn       = opt('moveIn');
+      const funding      = opt('funding');
+      const notes        = opt('notes');
+
+      const subject = encodeURIComponent(`New Referral - ${residentName}`);
+      const bodyLines = [
+        "Referrer Information",
+        `Name: ${referrerName}`,
+        `Organization: ${organization}`,
+        `Phone: ${referrerPhone}`,
+        `Email: ${referrerEmail}`,
+        "",
+        "Resident Information",
+        `Name: ${residentName}`,
+        `Demographic: ${demographic}`,
+        `City, State: ${city}, ${state}`,
+        `Target Move-In: ${moveIn}`,
+        `Funding/Insurance: ${funding}`,
+        "",
+        "Notes / Needs / Safety Considerations",
+        notes
+      ];
+
+      const body = encodeURIComponent(bodyLines.join("\n"));
+      window.location.href = `mailto:info@devinehousingsolutions.com?subject=${subject}&body=${body}`;
+    } catch(err) {
+      alert(err.message);
+    }
+  });
+</script>
 
 </body>
 </html>
