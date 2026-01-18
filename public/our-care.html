@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Our Care | Devine Housing Solutions</title>
-  <meta name="description" content="Learn about the supportive services and all-inclusive care offered by Devine Housing Solutions in Columbia, SC.">
+  <meta name="description" content="Our well-maintained homes in the Columbia, SC area provide supportive, all-inclusive housing with access to coordinated services through trusted third-party providers.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics -->
@@ -16,42 +16,126 @@
   </script>
 
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#F9EFE4; color:#1C3F60; }
-    header, footer { background:#1C3F60; color:#fff; padding:1rem; text-align:center; }
-    main { max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:6px; }
-    h1, h2 { color:#3B7A57; }
+    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --yellow:#FFD166; --white:#fff; --max:1200px; }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
+    header { background:var(--navy); padding:.75rem 1rem; }
+    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
+    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
+    nav a:hover { color:var(--yellow); }
+
+    main { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
+    .page-title { background:#fff; padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); margin-bottom:1.5rem; }
+    .page-title h1 { margin:0; color:var(--green); }
+    .page-title p { margin:.75rem 0 0; }
+
+    .img-wrap { margin:1rem 0 1.5rem; }
+    .img-wrap img { width:100%; max-height:420px; object-fit:cover; border-radius:6px; display:block; }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; }
+    .box {
+      background:#fff;
+      padding:1.5rem;
+      border-radius:6px;
+      box-shadow:0 2px 6px rgba(0,0,0,.1);
+      border-top:6px solid var(--green);
+    }
+    .box h2 { margin-top:0; color:var(--green); font-size:1.15rem; }
+    .note { font-size:.95rem; color:#2b2b2b; }
+
+    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
+    footer a { color:var(--yellow); }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Our Care & Support</h1>
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Devine Housing Solutions Logo"></a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
-  <p>
-    Our well-maintained homes are located in safe, established neighborhoods within the Columbia, SC area and nearby communities. Each residence is designed to meet the needs of the individuals we serve.
-  </p>
+  <div class="page-title">
+    <h1>Our Care</h1>
+    <p class="note">
+      Our well-maintained homes are located in safe, established neighborhoods with convenient access to transportation and community resources. Each home is designed to support the specific demographic it serves.
+    </p>
+  </div>
 
-  <h2>All-Inclusive Housing</h2>
-  <p>
-    Housing includes furnished living spaces, utilities, and coordination with third-party providers for supportive services.
-  </p>
+  <div class="img-wrap">
+    <img src="images/care-support.jpg" alt="Supportive housing care coordination and services">
+  </div>
 
-  <h2>Access to Services</h2>
-  <ul>
-    <li>Doctor and nurse home visits</li>
-    <li>Home health services</li>
-    <li>Case management and social work</li>
-    <li>Behavioral counseling</li>
-    <li>Medication management</li>
-    <li>Durable medical equipment</li>
-  </ul>
+  <div class="page-title">
+    <p>
+      Because our homes are structured around specific populations, residents may have access to a wide variety of services provided by trusted third-party partners. Availability varies by resident needs and provider support.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="box">
+      <h2>Doctor / Nurse Home Visits</h2>
+      <p>Coordination for in-home visits to support ongoing health needs.</p>
+    </div>
+
+    <div class="box">
+      <h2>Home Health Services</h2>
+      <p>Support through RN, Physical Therapy, Occupational Therapy, and Speech Therapy services.</p>
+    </div>
+
+    <div class="box">
+      <h2>Hospice</h2>
+      <p>Compassionate support coordination when hospice services are needed.</p>
+    </div>
+
+    <div class="box">
+      <h2>Durable Medical Equipment</h2>
+      <p>Help coordinating needed equipment to improve comfort and safety.</p>
+    </div>
+
+    <div class="box">
+      <h2>Case Management</h2>
+      <p>Support connecting residents to benefits, programs, and stability-focused resources.</p>
+    </div>
+
+    <div class="box">
+      <h2>Social Work</h2>
+      <p>Guidance and support navigating transitions and care coordination.</p>
+    </div>
+
+    <div class="box">
+      <h2>Behavioral Counseling &amp; Therapy</h2>
+      <p>Access to counseling and therapy providers when appropriate.</p>
+    </div>
+
+    <div class="box">
+      <h2>Medication Management</h2>
+      <p>Support routines and coordination that promote safety and consistency.</p>
+    </div>
+
+    <div class="box">
+      <h2>Many Additional Services</h2>
+      <p>Additional outsourced supports may be available depending on need and provider availability.</p>
+    </div>
+  </div>
 </main>
 
 <footer>
-  © 2025 Devine Housing Solutions
+  <p>
+    © 2025 Devine Housing Solutions |
+    <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
+    803-500-1901
+  </p>
 </footer>
 
 </body>
