@@ -29,6 +29,9 @@
     .page-title h1 { margin:0; color:var(--green); }
     .page-title p { margin:.75rem 0 0; }
 
+    .img-wrap { margin:1rem 0 1.5rem; }
+    .img-wrap img { width:100%; max-height:420px; object-fit:cover; border-radius:6px; display:block; }
+
     .grid {
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
@@ -42,7 +45,6 @@
       border-top:6px solid var(--green);
     }
     .box h2 { margin-top:0; color:var(--green); font-size:1.2rem; }
-    .note { font-size:.95rem; color:#2b2b2b; }
 
     footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
     footer a { color:var(--yellow); }
@@ -68,7 +70,12 @@
 <main>
   <div class="page-title">
     <h1>Demographics We Serve</h1>
-    <p class="note">We support individuals seeking stable, supportive, all-inclusive housing and coordinated services.</p>
+    <p>We support individuals seeking stable, supportive, all-inclusive housing and coordinated services.</p>
+  </div>
+
+  <!-- Demographics image -->
+  <div class="img-wrap">
+    <img src="images/community-support.jpg" alt="Adults receiving supportive housing services">
   </div>
 
   <div class="grid">
