@@ -2,96 +2,817 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Supportive Housing in Columbia, SC | Devine Housing Solutions</title>
-  <meta name="description" content="Supportive, affordable, all-inclusive housing in Columbia, SC and surrounding areas. Serving seniors, veterans, re-entry, recovery, low-income, and special needs individuals.">
+
+  <title>Supportive Living in Columbia, SC | Devine Living Solutions</title>
+
+  <meta
+    name="description"
+    content="Devine Living Solutions provides supportive, all-inclusive, non-medical group housing for adults in Columbia, South Carolina and surrounding communities. Short-term and permanent placements are available."
+  >
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://www.devinelivingsolutions.com/">
+
+  <meta property="og:title" content="Supportive Living in Columbia, SC | Devine Living Solutions">
+  <meta
+    property="og:description"
+    content="Safe, supportive, all-inclusive living solutions for adults who benefit from a stable and structured environment."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.devinelivingsolutions.com/">
+  <meta property="og:image" content="https://www.devinelivingsolutions.com/images/hero-home.jpg">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
     gtag('config', 'G-VE01S9Q42P');
   </script>
 
   <style>
     :root {
-      --navy:#1C3F60;
-      --green:#3B7A57;
-      --beige:#F9EFE4;
-      --yellow:#FFD166;
-      --white:#ffffff;
-      --max:1200px;
+      --navy: #1C3F60;
+      --green: #3B7A57;
+      --green-dark: #2C6043;
+      --beige: #F9EFE4;
+      --gold: #FFD166;
+      --white: #FFFFFF;
+      --text: #17324A;
+      --muted: #536575;
+      --border: #E3E7EA;
+      --shadow: 0 8px 24px rgba(28, 63, 96, 0.10);
+      --max: 1200px;
     }
-    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
-    header { background:var(--navy); padding:.75rem 1rem; }
-    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
-    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
-    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
-    nav a:hover { color:var(--yellow); }
-    .hero img { width:100%; max-height:480px; object-fit:cover; }
-    section { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
-    .card { background:#fff; padding:1.5rem; margin-bottom:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
-    .card h2 { color:var(--green); }
-    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; }
-    footer a { color:var(--yellow); }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 0.7rem 1rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo-link {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo-link img {
+      height: 68px;
+      width: auto;
+      background: var(--white);
+      padding: 5px;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.55rem 0.7rem;
+      border-radius: 6px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--gold);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-links .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.6rem 1rem;
+    }
+
+    .nav-links .nav-cta:hover,
+    .nav-links .nav-cta:focus {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(28, 63, 96, 0.88) 0%,
+          rgba(28, 63, 96, 0.72) 52%,
+          rgba(28, 63, 96, 0.25) 100%
+        ),
+        url("images/hero-home.jpg") center center / cover no-repeat;
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 5rem 1rem;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      color: var(--white);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      line-height: 1.08;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      margin: 1.25rem 0 0;
+      max-width: 700px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.75rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 1.35rem;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .button-primary:hover,
+    .button-primary:focus {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button-secondary {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .button-secondary:hover,
+    .button-secondary:focus {
+      background: var(--gold);
+    }
+
+    main {
+      display: block;
+    }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 2rem;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+    }
+
+    .section-heading p {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+    }
+
+    .intro-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 7px solid var(--green);
+    }
+
+    .intro-card h2 {
+      color: var(--green);
+      margin-top: 0;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--green);
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    .highlight-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .highlight-section .section-heading h2,
+    .highlight-section .section-heading p {
+      color: var(--white);
+    }
+
+    .highlight-section .card {
+      color: var(--text);
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .included-card {
+      background: var(--white);
+      padding: 1.75rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .included-card h3 {
+      color: var(--green);
+      margin-top: 0;
+    }
+
+    .included-card ul {
+      margin: 0.75rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .included-card li {
+      margin-bottom: 0.35rem;
+    }
+
+    .care-notice {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 8px solid var(--gold);
+    }
+
+    .care-notice h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .care-notice strong {
+      color: #A12626;
+    }
+
+    .referral-list {
+      columns: 2;
+      column-gap: 2rem;
+      margin: 1rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .referral-list li {
+      margin-bottom: 0.45rem;
+      break-inside: avoid;
+    }
+
+    .cta-section {
+      text-align: center;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 3rem 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-section h2 {
+      margin-top: 0;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.5rem 1rem 1.5rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: var(--gold);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .copyright {
+      max-width: var(--max);
+      margin: 2rem auto 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 920px) {
+      nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 0.15rem;
+      }
+
+      .nav-links a {
+        margin: 0;
+        padding: 0.45rem 0.55rem;
+        font-size: 0.92rem;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      header {
+        padding: 0.7rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+
+      .hero {
+        min-height: 460px;
+        background-position: center;
+      }
+
+      .hero-inner {
+        padding: 4rem 1rem;
+      }
+
+      .card-grid,
+      .included-grid,
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .referral-list {
+        columns: 1;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Devine Living Solutions",
+    "url": "https://www.devinelivingsolutions.com/",
+    "logo": "https://www.devinelivingsolutions.com/logo.png",
+    "telephone": "+1-803-500-1901",
+    "email": "info@devinehousingsolutions.com",
+    "description": "Supportive, all-inclusive, non-medical group housing for adults requiring low to moderate assistance in Columbia, South Carolina and surrounding communities.",
+    "areaServed": [
+      "Columbia, South Carolina",
+      "Lexington, South Carolina",
+      "Irmo, South Carolina",
+      "Cayce, South Carolina",
+      "West Columbia, South Carolina",
+      "Forest Acres, South Carolina",
+      "Sumter, South Carolina",
+      "Camden, South Carolina",
+      "Newberry, South Carolina",
+      "Orangeburg, South Carolina"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">
-      <img src="logo.png" alt="Devine Housing Solutions Logo">
+  <nav aria-label="Main navigation">
+    <a class="logo-link" href="index.html">
+      <img src="logo.png" alt="Devine Living Solutions logo">
     </a>
-    <div>
+
+    <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="demographics.html">Demographics</a>
-      <a href="our-care.html">Our Care</a>
       <a href="services.html">Services</a>
+      <a href="demographics.html">Who We Serve</a>
+      <a href="our-care.html">Our Care</a>
       <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="resources.html">Resources</a>
       <a href="referral.html">Referral</a>
-      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">Devine Living Solutions</span>
 
-<div class="hero">
-  <img src="images/hero-home.jpg" alt="Supportive housing in Columbia SC">
-</div>
+      <h1>Supportive Living. Stable Housing. Stronger Communities.</h1>
 
-<section>
-  <div class="card">
-    <h2>Serving Columbia, SC and Surrounding Areas</h2>
-    <p><strong>
-      We provide supportive, all-inclusive housing in Columbia, South Carolina and surrounding areas including Lexington, Irmo, Cayce, West Columbia, Forest Acres, Sumter, Camden, Newberry, and Orangeburg.
-    </strong></p>
-  </div>
+      <p>
+        We provide safe, supportive, all-inclusive living solutions for adults
+        throughout Columbia, South Carolina and surrounding communities.
+      </p>
 
-  <div class="card">
-    <h2>Our Mission</h2>
-    <p>
-      Devine Housing Solutions is committed to reducing homelessness by providing safe, stable, and supportive housing for individuals who need structure, dignity, and long-term stability.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Who We Serve</h2>
-    <p>
-      We serve seniors, veterans, individuals in recovery, returning citizens, low-income individuals, and people with special needs. Referrals are accepted nationwide.
-    </p>
+      <div class="button-row">
+        <a class="button button-primary" href="referral.html">Submit a Referral</a>
+        <a class="button button-secondary" href="services.html">Explore Our Services</a>
+      </div>
+    </div>
   </div>
 </section>
 
+<main>
+
+  <section class="section">
+    <div class="intro-card">
+      <h2>Serving Columbia, South Carolina and Nearby Communities</h2>
+
+      <p>
+        Devine Living Solutions provides supportive, all-inclusive housing in
+        Columbia, South Carolina and surrounding areas, including Lexington,
+        Irmo, Cayce, West Columbia, Forest Acres, Sumter, Camden, Newberry,
+        Orangeburg, and communities within approximately one hour of Columbia.
+      </p>
+
+      <p>
+        We offer short-term and permanent placement options for adults who benefit
+        from a clean, structured, respectful, and supportive living environment.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Our Mission and Values</h2>
+      <p>
+        We help residents experience stability, dignity, and connection through
+        safe housing and thoughtful support.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <h3>Safe Living</h3>
+        <p>
+          We provide clean, comfortable, well-maintained homes where residents
+          can feel respected and secure.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Compassionate Support</h3>
+        <p>
+          We work with residents, families, agencies, and community partners to
+          encourage dignity, independence, and stability.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Community Connections</h3>
+        <p>
+          Residents may receive access to outside providers and community
+          resources based on their individual needs and eligibility.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="highlight-section">
+    <div class="section">
+      <div class="section-heading">
+        <h2>Who We Serve</h2>
+        <p>
+          Our housing is designed for adults who benefit from supportive,
+          non-medical group living.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Seniors</h3>
+          <p>Stable and respectful living environments for older adults.</p>
+        </article>
+
+        <article class="card">
+          <h3>Veterans</h3>
+          <p>Supportive housing for veterans seeking safety and stability.</p>
+        </article>
+
+        <article class="card">
+          <h3>Adults With Disabilities</h3>
+          <p>
+            Inclusive living solutions for qualifying adults with physical,
+            intellectual, developmental, or special needs.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Individuals in Recovery</h3>
+          <p>
+            Structured living environments that support stability and healthy routines.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Returning Citizens</h3>
+          <p>
+            Supportive placement for adults transitioning back into the community.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Low-Income Adults</h3>
+          <p>
+            All-inclusive living options designed to reduce financial strain.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Why Choose Devine Living Solutions?</h2>
+      <p>
+        Our all-inclusive approach helps residents settle into a comfortable,
+        structured living environment.
+      </p>
+    </div>
+
+    <div class="included-grid">
+      <article class="included-card">
+        <h3>Personal Care Welcome Packet</h3>
+        <p>
+          Each new resident receives personal care essentials at move-in,
+          including:
+        </p>
+        <ul>
+          <li>Toothbrush and toothpaste</li>
+          <li>Soap, lotion, deodorant, and lip balm</li>
+          <li>Hand sanitizer and tissue</li>
+          <li>Nail clipper and nail file</li>
+          <li>Face cloth, shampoo, and conditioner</li>
+        </ul>
+      </article>
+
+      <article class="included-card">
+        <h3>Monthly Household Essentials</h3>
+        <p>The home receives essential household supplies each month, including:</p>
+        <ul>
+          <li>Laundry detergent</li>
+          <li>Paper towels and toilet paper</li>
+          <li>Trash bags</li>
+          <li>Cleaning supplies</li>
+          <li>Dishwashing liquid</li>
+        </ul>
+      </article>
+
+      <article class="included-card">
+        <h3>Home Amenities</h3>
+        <ul>
+          <li>Washer and dryer access</li>
+          <li>Television in the community area</li>
+          <li>Internet and Wi-Fi</li>
+          <li>Furnished shared living spaces</li>
+          <li>Utilities included</li>
+        </ul>
+      </article>
+
+      <article class="included-card">
+        <h3>Flexible Placement Options</h3>
+        <ul>
+          <li>Short-term placement</li>
+          <li>Long-term placement</li>
+          <li>Permanent placement</li>
+          <li>Nationwide referrals accepted</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="care-notice">
+      <h2>Important Care-Level Information</h2>
+
+      <p>
+        <strong>Devine Living Solutions is a non-medical group home.</strong>
+        We provide supportive, all-inclusive housing for adults who require
+        low to moderate levels of assistance.
+      </p>
+
+      <p>
+        <strong>We do not provide 24-hour skilled nursing or medical care.</strong>
+        Prospective residents should be able to live safely in a non-medical
+        group setting with appropriate outside support when needed.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="intro-card">
+      <h2>We Accept Referrals From</h2>
+
+      <ul class="referral-list">
+        <li>Hospitals</li>
+        <li>Case managers</li>
+        <li>Social workers</li>
+        <li>Mental health providers</li>
+        <li>Veterans organizations</li>
+        <li>Home health agencies</li>
+        <li>Rehabilitation facilities</li>
+        <li>Family members</li>
+        <li>Self-referrals</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cta-section">
+      <h2>Ready to Learn More?</h2>
+
+      <p>
+        Contact our team with questions or use our referral page to begin the
+        placement process.
+      </p>
+
+      <div class="button-row" style="justify-content:center;">
+        <a class="button button-secondary" href="referral.html">Submit a Referral</a>
+        <a class="button button-primary" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 <footer>
-  <p>
-    © 2025 Devine Housing Solutions |
-    <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
-    803-500-1901
-  </p>
+  <div class="footer-inner">
+    <div>
+      <h3>Devine Living Solutions</h3>
+      <p>
+        Supportive, all-inclusive, non-medical group housing for adults in
+        Columbia, South Carolina and surrounding communities.
+      </p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="demographics.html">Who We Serve</a>
+        <a href="our-care.html">Our Care</a>
+        <a href="faq.html">Frequently Asked Questions</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <div class="footer-links">
+        <a href="tel:18035001901">803-500-1901</a>
+        <a href="mailto:info@devinehousingsolutions.com">
+          info@devinehousingsolutions.com
+        </a>
+        <a href="referral.html">Submit a Referral</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; 2026 Devine Living Solutions. All rights reserved.
+  </div>
 </footer>
 
 </body>
