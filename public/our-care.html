@@ -2,144 +2,738 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Supportive Housing Care & Services | Columbia, SC</title>
-  <meta name="description" content="Our well-maintained homes in the Columbia, SC area provide supportive, all-inclusive housing with access to coordinated services through trusted third-party providers.">
+
+  <title>Our Care & Resident Support | Devine Living Solutions</title>
+
+  <meta
+    name="description"
+    content="Learn about the supportive living environment, community resources, and third-party services available to residents of Devine Living Solutions in Columbia, South Carolina."
+  >
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://www.devinelivingsolutions.com/our-care.html">
+
+  <meta property="og:title" content="Our Care & Resident Support | Devine Living Solutions">
+  <meta
+    property="og:description"
+    content="Supportive, all-inclusive, non-medical group housing with access to community resources and qualified third-party service providers."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.devinelivingsolutions.com/our-care.html">
+  <meta property="og:image" content="https://www.devinelivingsolutions.com/images/care-support.jpg">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
     gtag('config', 'G-VE01S9Q42P');
   </script>
 
   <style>
-    :root { --navy:#1C3F60; --green:#3B7A57; --beige:#F9EFE4; --yellow:#FFD166; --white:#fff; --max:1200px; }
-    body { margin:0; font-family:Arial,sans-serif; background:var(--beige); color:var(--navy); line-height:1.6; }
-    header { background:var(--navy); padding:.75rem 1rem; }
-    nav { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; align-items:center; }
-    nav img { height:60px; background:#fff; padding:4px; border-radius:6px; }
-    nav a { color:#fff; text-decoration:none; margin-left:1.25rem; font-weight:600; }
-    nav a:hover { color:var(--yellow); }
-
-    main { max-width:var(--max); margin:2rem auto; padding:0 1rem; }
-    .page-title { background:#fff; padding:1.5rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,.1); margin-bottom:1.5rem; }
-    .page-title h1 { margin:0; color:var(--green); }
-    .page-title p { margin:.75rem 0 0; }
-
-    .img-wrap { margin:1rem 0 1.5rem; }
-    .img-wrap img { width:100%; max-height:420px; object-fit:cover; border-radius:6px; display:block; }
-
-    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; }
-    .box {
-      background:#fff;
-      padding:1.5rem;
-      border-radius:6px;
-      box-shadow:0 2px 6px rgba(0,0,0,.1);
-      border-top:6px solid var(--green);
+    :root {
+      --navy: #1C3F60;
+      --green: #3B7A57;
+      --green-dark: #2C6043;
+      --beige: #F9EFE4;
+      --gold: #FFD166;
+      --white: #FFFFFF;
+      --text: #17324A;
+      --muted: #536575;
+      --red: #A12626;
+      --shadow: 0 8px 24px rgba(28, 63, 96, 0.10);
+      --max: 1200px;
     }
-    .box h2 { margin-top:0; color:var(--green); font-size:1.15rem; }
-    .note { font-size:.95rem; color:#2b2b2b; }
 
-    footer { background:var(--navy); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; }
-    footer a { color:var(--yellow); }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 0.7rem 1rem;
+    }
+
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo-link {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo-link img {
+      height: 68px;
+      width: auto;
+      background: var(--white);
+      padding: 5px;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.55rem 0.7rem;
+      border-radius: 6px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--gold);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-links .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.6rem 1rem;
+    }
+
+    .nav-links .nav-cta:hover,
+    .nav-links .nav-cta:focus {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .page-hero {
+      background:
+        linear-gradient(
+          rgba(28, 63, 96, 0.72),
+          rgba(28, 63, 96, 0.72)
+        ),
+        url("images/care-support.jpg") center center / cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .page-hero-inner {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .page-hero h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4vw, 3.7rem);
+      line-height: 1.15;
+    }
+
+    .page-hero p {
+      margin: 1rem auto 0;
+      max-width: 760px;
+      font-size: 1.1rem;
+    }
+
+    main {
+      display: block;
+    }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    .section-heading p {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+    }
+
+    .intro-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 7px solid var(--green);
+    }
+
+    .intro-card h2 {
+      margin-top: 0;
+      color: var(--green);
+    }
+
+    .care-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .care-card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--green);
+    }
+
+    .care-card h3 {
+      margin-top: 0;
+      color: var(--green);
+      font-size: 1.2rem;
+    }
+
+    .care-card p {
+      margin-bottom: 0;
+    }
+
+    .highlight-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .highlight-section .section-heading h2,
+    .highlight-section .section-heading p {
+      color: var(--white);
+    }
+
+    .highlight-section .care-card {
+      color: var(--text);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature-card h2 {
+      margin-top: 0;
+      color: var(--green);
+    }
+
+    .feature-card ul {
+      margin: 0.75rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .feature-card li {
+      margin-bottom: 0.45rem;
+    }
+
+    .care-notice {
+      background: var(--white);
+      padding: 2.25rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 9px solid var(--red);
+    }
+
+    .care-notice h2 {
+      margin-top: 0;
+      color: var(--red);
+    }
+
+    .care-notice strong {
+      color: var(--red);
+    }
+
+    .provider-note {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 8px solid var(--gold);
+    }
+
+    .provider-note h2 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .cta-section {
+      text-align: center;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 3rem 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-section h2 {
+      margin-top: 0;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 1.35rem;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .button-primary:hover,
+    .button-primary:focus {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button-secondary {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .button-secondary:hover,
+    .button-secondary:focus {
+      background: var(--gold);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.5rem 1rem 1.5rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: var(--gold);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .copyright {
+      max-width: var(--max);
+      margin: 2rem auto 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links {
+        gap: 0.15rem;
+      }
+
+      .nav-links a {
+        padding: 0.45rem 0.55rem;
+        font-size: 0.92rem;
+      }
+
+      .care-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+
+      .care-grid,
+      .split,
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+
+      .page-hero {
+        padding: 4rem 1rem;
+      }
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Resident Support and Care Coordination",
+    "provider": {
+      "@type": "Organization",
+      "name": "Devine Living Solutions",
+      "url": "https://www.devinelivingsolutions.com/",
+      "logo": "https://www.devinelivingsolutions.com/logo.png",
+      "telephone": "+1-803-500-1901",
+      "email": "info@devinehousingsolutions.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Columbia, South Carolina"
+    },
+    "description": "Supportive, non-medical group housing with access to qualified third-party community and healthcare service providers."
+  }
+  </script>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">
-      <img src="logo.png" alt="Devine Housing Solutions Logo">
+  <nav aria-label="Main navigation">
+    <a class="logo-link" href="index.html">
+      <img src="logo.png" alt="Devine Living Solutions logo">
     </a>
-    <div>
+
+    <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="demographics.html">Demographics</a>
-      <a href="our-care.html">Our Care</a>
       <a href="services.html">Services</a>
+      <a href="demographics.html">Who We Serve</a>
+      <a href="our-care.html">Our Care</a>
       <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="resources.html">Resources</a>
       <a href="referral.html">Referral</a>
-      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Our Care & Resident Support</h1>
+
+    <p>
+      We provide supportive, non-medical group living in well-maintained homes,
+      with access to community resources and qualified outside service providers.
+    </p>
+  </div>
+</section>
 
 <main>
-  <div class="page-title">
-    <h1>Our Care</h1>
-    <p class="note">
-      Our well-maintained homes are located in safe, established neighborhoods with convenient access to transportation and community resources. Each home is designed to support the specific demographic it serves.
-    </p>
-  </div>
 
-  <div class="img-wrap">
-    <img src="images/care-support.jpg" alt="Supportive housing care coordination and services">
-  </div>
+  <section class="section">
+    <div class="intro-card">
+      <h2>Supportive Homes in Established Communities</h2>
 
-  <div class="page-title">
-    <p>
-      Because our homes are structured around specific populations, residents may have access to a wide variety of services provided by trusted third-party partners. Availability varies by resident needs and provider support.
-    </p>
-  </div>
+      <p>
+        Our well-maintained homes are located in safe, established neighborhoods
+        with access to transportation, community resources, schools, shopping,
+        recreation, and other nearby services.
+      </p>
 
-  <div class="grid">
-    <div class="box">
-      <h2>Doctor / Nurse Home Visits</h2>
-      <p>Coordination for in-home visits to support ongoing health needs.</p>
+      <p>
+        Each residence is structured to support the particular population it
+        serves and to create a comfortable, respectful, and welcoming living environment.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Support Available Through Outside Providers</h2>
+
+      <p>
+        Depending on eligibility, need, funding, and provider availability,
+        residents may receive services from independent third-party professionals.
+      </p>
     </div>
 
-    <div class="box">
-      <h2>Home Health Services</h2>
-      <p>Support through RN, Physical Therapy, Occupational Therapy, and Speech Therapy services.</p>
-    </div>
+    <div class="care-grid">
+      <article class="care-card">
+        <h3>Doctor & Nurse Home Visits</h3>
+        <p>
+          Qualified outside providers may offer in-home visits to support
+          ongoing medical needs.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Hospice</h2>
-      <p>Compassionate support coordination when hospice services are needed.</p>
-    </div>
+      <article class="care-card">
+        <h3>Home Health Services</h3>
+        <p>
+          Residents may receive RN, physical therapy, occupational therapy,
+          or speech therapy services from outside providers.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Durable Medical Equipment</h2>
-      <p>Help coordinating needed equipment to improve comfort and safety.</p>
-    </div>
+      <article class="care-card">
+        <h3>Durable Medical Equipment</h3>
+        <p>
+          Equipment may be coordinated through qualified providers when medically
+          necessary and approved.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Case Management</h2>
-      <p>Support connecting residents to benefits, programs, and stability-focused resources.</p>
-    </div>
+      <article class="care-card">
+        <h3>Case Management</h3>
+        <p>
+          Case managers may help residents coordinate benefits, services,
+          appointments, and community resources.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Social Work</h2>
-      <p>Guidance and support navigating transitions and care coordination.</p>
-    </div>
+      <article class="care-card">
+        <h3>Social Work Support</h3>
+        <p>
+          Social workers may assist with transitions, planning, benefits,
+          advocacy, and resource coordination.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Behavioral Counseling &amp; Therapy</h2>
-      <p>Access to counseling and therapy providers when appropriate.</p>
-    </div>
+      <article class="care-card">
+        <h3>Behavioral Counseling & Therapy</h3>
+        <p>
+          Residents may access qualified counseling or therapy providers when appropriate.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Medication Management</h2>
-      <p>Support routines and coordination that promote safety and consistency.</p>
-    </div>
+      <article class="care-card">
+        <h3>Medication Support</h3>
+        <p>
+          Outside providers may assist with medication routines, education,
+          or management when approved and appropriate.
+        </p>
+      </article>
 
-    <div class="box">
-      <h2>Many Additional Services</h2>
-      <p>Additional outsourced supports may be available depending on need and provider availability.</p>
+      <article class="care-card">
+        <h3>Additional Community Services</h3>
+        <p>
+          Other services may be available based on individual need, eligibility,
+          and provider participation.
+        </p>
+      </article>
     </div>
-  </div>
+  </section>
+
+  <section class="highlight-section">
+    <div class="section">
+      <div class="section-heading">
+        <h2>Our Supportive Living Approach</h2>
+
+        <p>
+          We focus on housing stability, comfort, structure, dignity, and connection.
+        </p>
+      </div>
+
+      <div class="split">
+        <article class="feature-card">
+          <h2>What We Provide</h2>
+
+          <ul>
+            <li>Safe and maintained shared homes</li>
+            <li>Furnished common areas</li>
+            <li>Utilities, internet, and Wi-Fi</li>
+            <li>Washer and dryer access</li>
+            <li>Household supplies provided monthly</li>
+            <li>Personal care welcome packet at move-in</li>
+            <li>Short-term, long-term, and permanent placement options</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h2>What Outside Providers May Provide</h2>
+
+          <ul>
+            <li>Medical visits</li>
+            <li>Home health care</li>
+            <li>Therapy services</li>
+            <li>Behavioral health support</li>
+            <li>Case management</li>
+            <li>Social work services</li>
+            <li>Durable medical equipment</li>
+            <li>Medication support</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="provider-note">
+      <h2>Third-Party Service Disclaimer</h2>
+
+      <p>
+        Third-party services are not delivered directly by Devine Living Solutions.
+        Availability depends on resident eligibility, provider approval, insurance,
+        funding, scheduling, and service-area coverage.
+      </p>
+
+      <p>
+        Residents, families, case managers, and referral partners are responsible
+        for coordinating and maintaining any outside medical or clinical services
+        required by the resident.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="care-notice">
+      <h2>Important: We Are a Non-Medical Group Home</h2>
+
+      <p>
+        <strong>Devine Living Solutions does not provide 24-hour skilled nursing,
+        emergency medical supervision, or continuous medical care.</strong>
+      </p>
+
+      <p>
+        We accept adults whose needs fall within a low to moderate level of care
+        and who can live safely in a shared, non-medical residential environment.
+      </p>
+
+      <p>
+        Each referral is reviewed to determine whether the resident’s needs are
+        appropriate for the home and available support structure.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cta-section">
+      <h2>Have Questions About Care or Placement?</h2>
+
+      <p>
+        Contact our team or submit a referral so we can review the prospective
+        resident’s needs and discuss placement suitability.
+      </p>
+
+      <div class="button-row">
+        <a class="button button-secondary" href="referral.html">Submit a Referral</a>
+        <a class="button button-primary" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  <p>
-    © 2025 Devine Housing Solutions |
-    <a href="mailto:info@devinehousingsolutions.com">info@devinehousingsolutions.com</a> |
-    803-500-1901
-  </p>
+  <div class="footer-inner">
+    <div>
+      <h3>Devine Living Solutions</h3>
+
+      <p>
+        Supportive, all-inclusive, non-medical group housing for adults in
+        Columbia, South Carolina and surrounding communities.
+      </p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="demographics.html">Who We Serve</a>
+        <a href="our-care.html">Our Care</a>
+        <a href="faq.html">Frequently Asked Questions</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+
+      <div class="footer-links">
+        <a href="tel:18035001901">803-500-1901</a>
+
+        <a href="mailto:info@devinehousingsolutions.com">
+          info@devinehousingsolutions.com
+        </a>
+
+        <a href="referral.html">Submit a Referral</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; 2026 Devine Living Solutions. All rights reserved.
+  </div>
 </footer>
 
 </body>
