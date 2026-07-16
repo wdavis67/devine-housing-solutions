@@ -135,24 +135,28 @@
     }
 
     .page-hero {
-      background:
-        linear-gradient(
-          rgba(28, 63, 96, 0.72),
-          rgba(28, 63, 96, 0.72)
-        ),
-        url("images/community-support.jpg") center center / cover no-repeat;
-      color: var(--white);
-      text-align: center;
-      padding: 5rem 1rem;
+      background: url("images/community-support.jpg") center center / cover no-repeat;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
     }
 
     .page-hero-inner {
       max-width: 850px;
+      width: 100%;
       margin: 0 auto;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .page-hero h1 {
       margin: 0;
+      color: var(--green);
       font-size: clamp(2.2rem, 4vw, 3.7rem);
       line-height: 1.15;
     }
@@ -160,6 +164,7 @@
     .page-hero p {
       margin: 1rem auto 0;
       max-width: 760px;
+      color: var(--navy);
       font-size: 1.1rem;
     }
 
@@ -433,6 +438,15 @@
         justify-content: center;
       }
 
+      .page-hero {
+        min-height: 380px;
+        padding: 2rem 1rem;
+      }
+
+      .page-hero-inner {
+        padding: 1.5rem;
+      }
+
       .demographic-grid,
       .criteria-grid,
       .footer-inner {
@@ -445,10 +459,6 @@
 
       .section {
         padding: 3rem 1rem;
-      }
-
-      .page-hero {
-        padding: 4rem 1rem;
       }
     }
   </style>
