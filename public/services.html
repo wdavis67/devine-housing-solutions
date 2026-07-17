@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>All-Inclusive Living Services | Devine Living Solutions</title>
+  <title>Supportive Housing Services | Devine Living Solutions</title>
 
   <meta
     name="description"
-    content="Explore the personal care supplies, monthly household essentials, home amenities, and short-term or permanent placement options included with Devine Living Solutions in Columbia, South Carolina."
+    content="Explore the supportive housing services and included amenities available through Devine Living Solutions in Columbia, South Carolina."
   >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="canonical" href="https://www.devinelivingsolutions.com/services.html">
 
-  <meta property="og:title" content="All-Inclusive Living Services | Devine Living Solutions">
+  <meta property="og:title" content="Supportive Housing Services | Devine Living Solutions">
   <meta
     property="og:description"
-    content="Supportive, all-inclusive, non-medical group housing with personal care supplies, household essentials, Wi-Fi, laundry access, and flexible placement options."
+    content="Learn about included housing, household supplies, amenities, utilities, and resident support at Devine Living Solutions."
   >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.devinelivingsolutions.com/services.html">
@@ -40,7 +40,6 @@
     :root {
       --navy: #1C3F60;
       --green: #3B7A57;
-      --green-dark: #2C6043;
       --beige: #F9EFE4;
       --gold: #FFD166;
       --white: #FFFFFF;
@@ -67,10 +66,6 @@
       line-height: 1.65;
     }
 
-    img {
-      max-width: 100%;
-    }
-
     header {
       background: var(--navy);
       padding: 0.7rem 1rem;
@@ -94,10 +89,10 @@
     .logo-link img {
       height: 68px;
       width: auto;
+      display: block;
       background: var(--white);
       padding: 5px;
       border-radius: 8px;
-      display: block;
     }
 
     .nav-links {
@@ -125,7 +120,6 @@
     .nav-links .nav-cta {
       background: var(--green);
       color: var(--white);
-      padding: 0.6rem 1rem;
     }
 
     .nav-links .nav-cta:hover,
@@ -135,36 +129,36 @@
     }
 
     .page-hero {
-      background:
-        linear-gradient(
-          rgba(28, 63, 96, 0.76),
-          rgba(28, 63, 96, 0.76)
-        ),
-        url("images/care-support.jpg") center center / cover no-repeat;
-      color: var(--white);
-      text-align: center;
-      padding: 5rem 1rem;
+      min-height: 470px;
+      padding: 3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("images/care-support.jpg") center center / cover no-repeat;
     }
 
     .page-hero-inner {
+      width: 100%;
       max-width: 850px;
-      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
     }
 
     .page-hero h1 {
       margin: 0;
+      color: var(--green);
       font-size: clamp(2.2rem, 4vw, 3.7rem);
       line-height: 1.15;
     }
 
     .page-hero p {
-      margin: 1rem auto 0;
       max-width: 760px;
+      margin: 1rem auto 0;
+      color: var(--navy);
       font-size: 1.1rem;
-    }
-
-    main {
-      display: block;
     }
 
     .section {
@@ -174,105 +168,94 @@
     }
 
     .section-heading {
-      text-align: center;
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto 2rem;
+      text-align: center;
     }
 
     .section-heading h2 {
       margin: 0;
       color: var(--green);
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
     }
 
     .section-heading p {
-      margin: 0.75rem 0 0;
       color: var(--muted);
     }
 
-    .intro-card {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-      border-left: 7px solid var(--green);
-    }
-
-    .intro-card h2 {
-      margin-top: 0;
-      color: var(--green);
-    }
-
     .service-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.5rem;
-    }
-
-    .service-card {
-      background: var(--white);
-      padding: 1.75rem;
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-      border-top: 7px solid var(--green);
-    }
-
-    .service-card.prominent {
-      border-top-color: var(--gold);
-    }
-
-    .service-card h2 {
-      margin-top: 0;
-      color: var(--green);
-      font-size: 1.35rem;
-    }
-
-    .service-card ul {
-      margin: 0.75rem 0 0;
-      padding-left: 1.25rem;
-    }
-
-    .service-card li {
-      margin-bottom: 0.42rem;
-    }
-
-    .highlight-section {
-      background: var(--navy);
-      color: var(--white);
-    }
-
-    .highlight-section .section-heading h2,
-    .highlight-section .section-heading p {
-      color: var(--white);
-    }
-
-    .highlight-section .service-card {
-      color: var(--text);
-    }
-
-    .placement-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1.25rem;
     }
 
-    .placement-card {
+    .service-card {
       background: var(--white);
-      padding: 1.75rem;
+      padding: 1.7rem;
       border-radius: 10px;
       box-shadow: var(--shadow);
-      text-align: center;
       border-top: 6px solid var(--green);
     }
 
-    .placement-card h3 {
+    .service-card h3 {
+      margin-top: 0;
+      color: var(--green);
+    }
+
+    .service-card ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .welcome-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      background: var(--white);
+      padding: 2.25rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      border-left: 8px solid var(--gold);
+    }
+
+    .welcome-card h2 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .welcome-card ul {
+      columns: 2;
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .support-panel {
+      min-height: 430px;
+      padding: 3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("images/community-support.jpg") center center / cover no-repeat;
+      border-radius: 14px;
+    }
+
+    .support-panel-content {
+      max-width: 780px;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .support-panel-content h2 {
       margin-top: 0;
       color: var(--green);
     }
 
     .care-notice {
-      background: var(--white);
       padding: 2.25rem;
+      background: var(--white);
       border-radius: 10px;
       box-shadow: var(--shadow);
       border-left: 9px solid var(--red);
@@ -283,49 +266,32 @@
       color: var(--red);
     }
 
-    .care-notice strong {
-      color: var(--red);
-    }
-
-    .third-party-note {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-      border-left: 8px solid var(--gold);
-    }
-
-    .third-party-note h2 {
-      margin-top: 0;
-      color: var(--navy);
-    }
-
-    .cta-section {
-      text-align: center;
-      background: var(--green);
-      color: var(--white);
-      border-radius: 12px;
+    .cta {
       padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--white);
+      background: var(--green);
+      border-radius: 12px;
       box-shadow: var(--shadow);
     }
 
-    .cta-section h2 {
+    .cta h2 {
       margin-top: 0;
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
     }
 
     .button-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.85rem;
       justify-content: center;
+      gap: 0.9rem;
       margin-top: 1.5rem;
     }
 
     .button {
       display: inline-block;
-      padding: 0.85rem 1.35rem;
-      border-radius: 7px;
+      padding: 0.9rem 1.4rem;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 800;
       transition: transform 0.2s ease, background 0.2s ease;
@@ -372,8 +338,8 @@
     }
 
     footer h3 {
-      color: var(--gold);
       margin-top: 0;
+      color: var(--gold);
     }
 
     footer a {
@@ -401,70 +367,56 @@
     }
 
     @media (max-width: 920px) {
-      .nav-links {
-        gap: 0.15rem;
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .welcome-card {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
       }
 
       .nav-links a {
         padding: 0.45rem 0.55rem;
         font-size: 0.92rem;
       }
-
-      .placement-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr 1fr;
-      }
     }
 
     @media (max-width: 680px) {
       nav {
         flex-direction: column;
-        align-items: center;
       }
 
       .nav-links {
         justify-content: center;
       }
 
+      .page-hero {
+        min-height: 390px;
+        padding: 2rem 1rem;
+      }
+
+      .page-hero-inner {
+        padding: 1.5rem;
+      }
+
       .service-grid,
-      .placement-grid,
       .footer-inner {
         grid-template-columns: 1fr;
+      }
+
+      .welcome-card ul {
+        columns: 1;
       }
 
       .section {
         padding: 3rem 1rem;
       }
-
-      .page-hero {
-        padding: 4rem 1rem;
-      }
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Supportive All-Inclusive Living Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Devine Living Solutions",
-      "url": "https://www.devinelivingsolutions.com/",
-      "logo": "https://www.devinelivingsolutions.com/logo.png",
-      "telephone": "+1-803-500-1901",
-      "email": "info@devinehousingsolutions.com"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Columbia, South Carolina"
-    },
-    "description": "Supportive, all-inclusive, non-medical group housing with personal care supplies, household essentials, home amenities, and short-term or permanent placement options."
-  }
-  </script>
 </head>
 
 <body>
@@ -491,11 +443,12 @@
 
 <section class="page-hero">
   <div class="page-hero-inner">
-    <h1>Services Included With Our Living Solutions</h1>
+    <h1>Our Housing Services</h1>
 
     <p>
-      Our all-inclusive approach provides residents with essential personal-care
-      supplies, household necessities, home amenities, and flexible placement options.
+      Devine Living Solutions provides supportive, all-inclusive,
+      non-medical group housing designed to promote comfort, stability,
+      dignity, and community.
     </p>
   </div>
 </section>
@@ -503,204 +456,167 @@
 <main>
 
   <section class="section">
-    <div class="intro-card">
-      <h2>Supportive, All-Inclusive Placement</h2>
-
-      <p>
-        Devine Living Solutions provides short-term, long-term, and permanent
-        placement options for adults who benefit from a safe, clean, structured,
-        and non-medical group living environment.
-      </p>
-
-      <p>
-        Our homes serve residents throughout Columbia, South Carolina and
-        surrounding communities. Referrals are accepted from local and nationwide sources.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="section-heading">
-      <h2>Included at Move-In</h2>
+      <h2>What Is Included</h2>
 
       <p>
-        Every new resident receives a personal care welcome packet at the time of move-in.
+        Our residents benefit from essential household services and shared
+        amenities that help create a comfortable and dependable living environment.
       </p>
     </div>
 
     <div class="service-grid">
-      <article class="service-card prominent">
-        <h2>Personal Care Welcome Packet</h2>
-
-        <p>
-          Each new resident receives the following personal-care essentials:
-        </p>
-
+      <article class="service-card">
+        <h3>Housing and Utilities</h3>
         <ul>
-          <li>Toothbrush</li>
-          <li>Toothpaste</li>
-          <li>Bar of soap</li>
-          <li>Lotion</li>
-          <li>Deodorant</li>
-          <li>Lip balm</li>
-          <li>Hand sanitizer</li>
-          <li>Tissue</li>
-          <li>Nail clipper</li>
-          <li>Nail file</li>
-          <li>Face cloth</li>
-          <li>Shampoo</li>
-          <li>Conditioner</li>
+          <li>Comfortable shared housing</li>
+          <li>Electricity included</li>
+          <li>Water included</li>
+          <li>Internet and Wi-Fi</li>
+          <li>Furnished shared spaces</li>
         </ul>
       </article>
 
       <article class="service-card">
-        <h2>Move-In Ready Living Environment</h2>
-
-        <p>
-          Residents enter a furnished shared living environment designed to
-          support comfort, routine, and stability.
-        </p>
-
+        <h3>Household Essentials</h3>
         <ul>
-          <li>Furnished shared living areas</li>
-          <li>Utilities included</li>
-          <li>Community living space</li>
-          <li>Clean and maintained residential setting</li>
+          <li>Laundry detergent</li>
+          <li>Paper towels</li>
+          <li>Toilet paper</li>
+          <li>Trash bags</li>
+          <li>Cleaning supplies</li>
+          <li>Dishwashing liquid</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h3>Shared Amenities</h3>
+        <ul>
+          <li>Washer and dryer access</li>
+          <li>Community-area television</li>
+          <li>Shared living spaces</li>
+          <li>Kitchen and dining areas</li>
+          <li>Structured residential environment</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h3>Placement Options</h3>
+        <ul>
+          <li>Short-term placement</li>
+          <li>Long-term placement</li>
+          <li>Permanent placement</li>
+          <li>Individual referral review</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h3>Resident Support</h3>
+        <ul>
+          <li>Respectful shared-home environment</li>
+          <li>Encouragement of independence</li>
+          <li>Connection to outside resources</li>
+          <li>Coordination with referral partners</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h3>Referral Collaboration</h3>
+        <ul>
+          <li>Case-manager communication</li>
+          <li>Social-worker referrals</li>
+          <li>Hospital discharge referrals</li>
+          <li>Family and self-referrals</li>
         </ul>
       </article>
     </div>
   </section>
 
-  <section class="highlight-section">
-    <div class="section">
-      <div class="section-heading">
-        <h2>Provided Monthly at the Home</h2>
+  <section class="section">
+    <div class="welcome-card">
+      <div>
+        <h2>Personal Care Welcome Packet</h2>
 
         <p>
-          The following household essentials are supplied monthly for use within the residence.
+          Every new resident receives a personal care packet at move-in to
+          help them settle into the home.
         </p>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card prominent">
-          <h2>Monthly Household Essentials</h2>
-
-          <ul>
-            <li>Laundry detergent</li>
-            <li>Paper towels</li>
-            <li>Toilet paper</li>
-            <li>Trash bags</li>
-            <li>Cleaning supplies</li>
-            <li>Dishwashing liquid</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <h2>Home Amenities</h2>
-
-          <ul>
-            <li>Washer and dryer access</li>
-            <li>Television in the community area</li>
-            <li>Internet access</li>
-            <li>Wi-Fi</li>
-            <li>Shared furnished common spaces</li>
-          </ul>
-        </article>
-      </div>
+      <ul>
+        <li>Toothbrush</li>
+        <li>Toothpaste</li>
+        <li>Bar of soap</li>
+        <li>Lotion</li>
+        <li>Deodorant</li>
+        <li>Lip balm</li>
+        <li>Hand sanitizer</li>
+        <li>Tissue</li>
+        <li>Nail clipper</li>
+        <li>Nail file</li>
+        <li>Face cloth</li>
+        <li>Shampoo</li>
+        <li>Conditioner</li>
+      </ul>
     </div>
   </section>
 
   <section class="section">
-    <div class="section-heading">
-      <h2>Placement Options</h2>
-
-      <p>
-        Placement length may vary based on availability, resident needs, and referral arrangements.
-      </p>
-    </div>
-
-    <div class="placement-grid">
-      <article class="placement-card">
-        <h3>Short-Term Placement</h3>
+    <div class="support-panel">
+      <div class="support-panel-content">
+        <h2>Outside Community Services</h2>
 
         <p>
-          Temporary supportive housing for adults needing a stable residential setting.
+          Depending on eligibility and provider availability, residents may
+          receive services from qualified independent providers.
         </p>
-      </article>
-
-      <article class="placement-card">
-        <h3>Long-Term Placement</h3>
 
         <p>
-          Extended housing options for residents who benefit from ongoing stability and structure.
+          These services may include home health, therapy, behavioral counseling,
+          case management, social work, medication support, durable medical
+          equipment, and other community-based assistance.
         </p>
-      </article>
 
-      <article class="placement-card">
-        <h3>Permanent Placement</h3>
-
-        <p>
-          Permanent living options may be considered when the resident and placement are appropriate.
-        </p>
-      </article>
+        <a class="button button-primary" href="resources.html">
+          View Community Resources
+        </a>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="care-notice">
-      <h2>Important: Our Level of Care</h2>
+      <h2>Non-Medical Housing</h2>
 
       <p>
         <strong>Devine Living Solutions is a non-medical group home.</strong>
-        We accept adults whose needs fall within a low to moderate level of care.
+        Our services are intended for adults with low to moderate support needs.
       </p>
 
       <p>
-        <strong>We do not provide 24-hour skilled nursing or medical care.</strong>
-        Residents must be able to live safely in a shared non-medical residential
-        environment with appropriate outside support when necessary.
-      </p>
-
-      <p>
-        Placement suitability is reviewed carefully so that each resident’s needs
-        are appropriate for the home and available support structure.
+        We do not provide 24-hour skilled nursing, emergency medical care,
+        continuous medical monitoring, or hospital-level services.
       </p>
     </div>
   </section>
 
   <section class="section">
-    <div class="third-party-note">
-      <h2>Outside Support Services</h2>
+    <div class="cta">
+      <h2>Discuss Placement With Our Team</h2>
 
       <p>
-        Depending on eligibility, individual needs, and provider availability,
-        residents may receive services from independent third-party organizations.
-      </p>
-
-      <p>
-        These services may include home-health visits, case management, social-work
-        support, behavioral counseling, therapy, durable medical equipment,
-        medication-support coordination, and other community-based services.
-      </p>
-
-      <p>
-        Outside services are not delivered directly by Devine Living Solutions
-        and may require separate provider approval or funding.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="cta-section">
-      <h2>Ready to Discuss Placement?</h2>
-
-      <p>
-        Contact us with questions or submit a referral to begin the placement-review process.
+        Contact us about housing availability, resident needs, funding,
+        placement options, or referral requirements.
       </p>
 
       <div class="button-row">
-        <a class="button button-secondary" href="referral.html">Submit a Referral</a>
-        <a class="button button-primary" href="contact.html">Contact Us</a>
+        <a class="button button-secondary" href="referral.html">
+          Submit a Referral
+        </a>
+
+        <a class="button button-primary" href="contact.html">
+          Contact Us
+        </a>
       </div>
     </div>
   </section>
