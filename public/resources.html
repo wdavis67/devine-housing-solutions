@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Community Resources | Devine Living Solutions</title>
+
+  <meta
+    name="description"
+    content="Find helpful South Carolina and national resources for housing, veterans, behavioral health, Social Security, Medicaid, transportation, and community support."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://www.devinelivingsolutions.com/resources.html">
+
+  <meta property="og:title" content="Community Resources | Devine Living Solutions">
+  <meta
+    property="og:description"
+    content="Helpful housing, veterans, health, benefits, transportation, and community resources for residents, families, and referral partners."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.devinelivingsolutions.com/resources.html">
+  <meta property="og:image" content="https://www.devinelivingsolutions.com/images/community-support.jpg">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-VE01S9Q42P');
+  </script>
+
+  <style>
+    :root {
+      --navy:#1C3F60;
+      --green:#3B7A57;
+      --beige:#F9EFE4;
+      --gold:#FFD166;
+      --white:#FFFFFF;
+      --text:#17324A;
+      --muted:#536575;
+      --shadow:0 8px 24px rgba(28,63,96,.10);
+      --max:1200px;
+    }
+
+    * {
+      box-sizing:border-box;
+    }
+
+    body {
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--beige);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    header {
+      background:var(--navy);
+      padding:.7rem 1rem;
+    }
+
+    nav {
+      max-width:var(--max);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+
+    .logo-link {
+      display:inline-flex;
+      align-items:center;
+      flex-shrink:0;
+    }
+
+    .logo-link img {
+      height:68px;
+      width:auto;
+      background:var(--white);
+      padding:5px;
+      border-radius:8px;
+      display:block;
+    }
+
+    .nav-links {
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+      gap:.35rem;
+    }
+
+    .nav-links a {
+      color:var(--white);
+      text-decoration:none;
+      font-weight:700;
+      padding:.55rem .7rem;
+      border-radius:6px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color:var(--gold);
+      background:rgba(255,255,255,.06);
+    }
+
+    .nav-links .nav-cta {
+      background:var(--green);
+    }
+
+    .nav-links .nav-cta:hover,
+    .nav-links .nav-cta:focus {
+      background:var(--gold);
+      color:var(--navy);
+    }
+
+    .page-hero {
+      background:url("images/community-support.jpg") center center / cover no-repeat;
+      min-height:430px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:3rem 1rem;
+    }
+
+    .page-hero-inner {
+      max-width:850px;
+      width:100%;
+      background:rgba(255,255,255,.93);
+      padding:2rem;
+      border-radius:12px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .page-hero h1 {
+      margin:0;
+      color:var(--green);
+      font-size:clamp(2.2rem,4vw,3.7rem);
+      line-height:1.15;
+    }
+
+    .page-hero p {
+      margin:1rem auto 0;
+      max-width:760px;
+      color:var(--navy);
+      font-size:1.1rem;
+    }
+
+    .section {
+      max-width:var(--max);
+      margin:auto;
+      padding:4rem 1rem;
+    }
+
+    .section-heading {
+      text-align:center;
+      max-width:800px;
+      margin:0 auto 2rem;
+    }
+
+    .section-heading h2 {
+      margin:0;
+      color:var(--green);
+      font-size:clamp(1.8rem,3vw,2.5rem);
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    .resource-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:1.25rem;
+    }
+
+    .resource-card {
+      background:var(--white);
+      padding:1.6rem;
+      border-radius:10px;
+      box-shadow:var(--shadow);
+      border-top:6px solid var(--green);
+    }
+
+    .resource-card h3 {
+      margin-top:0;
+      color:var(--green);
+    }
+
+    .resource-card p {
+      margin-bottom:1rem;
+    }
+
+    .resource-card a {
+      color:var(--navy);
+      font-weight:700;
+      word-break:break-word;
+    }
+
+    .resource-card a:hover,
+    .resource-card a:focus {
+      color:var(--green);
+    }
+
+    .notice {
+      background:var(--white);
+      padding:2rem;
+      border-radius:10px;
+      box-shadow:var(--shadow);
+      border-left:8px solid var(--gold);
+    }
+
+    .notice h2 {
+      margin-top:0;
+      color:var(--navy);
+    }
+
+    .cta-section {
+      text-align:center;
+      background:var(--green);
+      color:var(--white);
+      border-radius:12px;
+      padding:3rem 1.5rem;
+      box-shadow:var(--shadow);
+    }
+
+    .cta-section h2 {
+      margin-top:0;
+      font-size:clamp(1.8rem,3vw,2.5rem);
+    }
+
+    .button-row {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:.85rem;
+      margin-top:1.5rem;
+    }
+
+    .button {
+      display:inline-block;
+      padding:.85rem 1.35rem;
+      border-radius:7px;
+      text-decoration:none;
+      font-weight:800;
+    }
+
+    .button-primary {
+      background:var(--navy);
+      color:var(--white);
+    }
+
+    .button-secondary {
+      background:var(--white);
+      color:var(--navy);
+    }
+
+    .button:hover,
+    .button:focus {
+      background:var(--gold);
+      color:var(--navy);
+    }
+
+    footer {
+      background:var(--navy);
+      color:var(--white);
+      padding:2.5rem 1rem 1.5rem;
+    }
+
+    .footer-inner {
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:2rem;
+    }
+
+    footer h3 {
+      color:var(--gold);
+      margin-top:0;
+    }
+
+    footer a {
+      color:var(--white);
+      text-decoration:none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color:var(--gold);
+    }
+
+    .footer-links {
+      display:grid;
+      gap:.45rem;
+    }
+
+    .copyright {
+      max-width:var(--max);
+      margin:2rem auto 0;
+      padding-top:1.25rem;
+      border-top:1px solid rgba(255,255,255,.18);
+      text-align:center;
+      font-size:.95rem;
+    }
+
+    @media (max-width:920px) {
+      .resource-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .footer-inner {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .nav-links a {
+        padding:.45rem .55rem;
+        font-size:.92rem;
+      }
+    }
+
+    @media (max-width:680px) {
+      nav {
+        flex-direction:column;
+      }
+
+      .nav-links {
+        justify-content:center;
+      }
+
+      .resource-grid,
+      .footer-inner {
+        grid-template-columns:1fr;
+      }
+
+      .page-hero {
+        min-height:360px;
+        padding:2rem 1rem;
+      }
+
+      .page-hero-inner {
+        padding:1.5rem;
+      }
+
+      .section {
+        padding:3rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav aria-label="Main navigation">
+    <a class="logo-link" href="index.html">
+      <img src="logo.png" alt="Devine Living Solutions logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="demographics.html">Who We Serve</a>
+      <a href="our-care.html">Our Care</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="resources.html">Resources</a>
+      <a href="referral.html">Referral</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Community Resources</h1>
+
+    <p>
+      Helpful links for residents, families, case managers, social workers,
+      veterans, and community referral partners.
+    </p>
+  </div>
+</section>
+
+<main>
+
+  <section class="section">
+    <div class="notice">
+      <h2>Important Resource Notice</h2>
+
+      <p>
+        These outside resources are provided for general informational purposes.
+        Devine Living Solutions does not control, operate, or guarantee the
+        eligibility requirements, services, availability, or accuracy of
+        third-party organizations.
+      </p>
+
+      <p>
+        Contact the organization directly for current information and assistance.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Benefits and Government Resources</h2>
+
+      <p>
+        Use these links to learn about benefits, eligibility, and public assistance.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+
+      <article class="resource-card">
+        <h3>Social Security Administration</h3>
+        <p>
+          Information about Social Security retirement, disability, SSI,
+          Medicare, and benefit applications.
+        </p>
+        <a href="https://www.ssa.gov/" target="_blank" rel="noopener noreferrer">
+          Visit SSA.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>South Carolina Medicaid</h3>
+        <p>
+          Information about South Carolina Medicaid eligibility, enrollment,
+          benefits, and member services.
+        </p>
+        <a href="https://www.scdhhs.gov/" target="_blank" rel="noopener noreferrer">
+          Visit SCDHHS.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>South Carolina Department of Social Services</h3>
+        <p>
+          Information about SNAP, family assistance, adult services,
+          and other support programs.
+        </p>
+        <a href="https://dss.sc.gov/" target="_blank" rel="noopener noreferrer">
+          Visit DSS.SC.gov
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Veterans Resources</h2>
+
+      <p>
+        Support and benefit information for veterans and their families.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+
+      <article class="resource-card">
+        <h3>U.S. Department of Veterans Affairs</h3>
+        <p>
+          Information about healthcare, disability compensation, housing,
+          pensions, and other veteran benefits.
+        </p>
+        <a href="https://www.va.gov/" target="_blank" rel="noopener noreferrer">
+          Visit VA.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>South Carolina Department of Veterans’ Affairs</h3>
+        <p>
+          State-level assistance, advocacy, benefits information,
+          and veteran resources.
+        </p>
+        <a href="https://scdva.sc.gov/" target="_blank" rel="noopener noreferrer">
+          Visit SCDVA.SC.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>Veterans Crisis Line</h3>
+        <p>
+          Confidential crisis support for veterans, service members,
+          National Guard members, and their families.
+        </p>
+        <a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">
+          Visit VeteransCrisisLine.net
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Mental Health and Recovery Resources</h2>
+
+      <p>
+        Behavioral-health, crisis-support, and substance-use resources.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+
+      <article class="resource-card">
+        <h3>South Carolina Department of Mental Health</h3>
+        <p>
+          Information about community mental-health services,
+          treatment locations, and support programs.
+        </p>
+        <a href="https://www.scdmh.org/" target="_blank" rel="noopener noreferrer">
+          Visit SCDMH.org
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>SAMHSA National Helpline</h3>
+        <p>
+          Treatment referrals and information for mental-health
+          and substance-use concerns.
+        </p>
+        <a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">
+          Visit SAMHSA.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>988 Suicide & Crisis Lifeline</h3>
+        <p>
+          Call or text 988 for crisis support from trained counselors.
+        </p>
+        <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">
+          Visit 988Lifeline.org
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Housing and Community Assistance</h2>
+
+      <p>
+        Housing, homelessness-prevention, and local support resources.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+
+      <article class="resource-card">
+        <h3>HUD Housing Resources</h3>
+        <p>
+          Information about rental assistance, public housing,
+          housing counseling, and homelessness resources.
+        </p>
+        <a href="https://www.hud.gov/" target="_blank" rel="noopener noreferrer">
+          Visit HUD.gov
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>South Carolina Housing</h3>
+        <p>
+          Information about affordable housing, rental assistance,
+          homeownership, and housing programs.
+        </p>
+        <a href="https://schousing.com/" target="_blank" rel="noopener noreferrer">
+          Visit SCHousing.com
+        </a>
+      </article>
+
+      <article class="resource-card">
+        <h3>United Way 211</h3>
+        <p>
+          Search for local food, housing, transportation, healthcare,
+          and emergency-assistance resources.
+        </p>
+        <a href="https://www.211.org/" target="_blank" rel="noopener noreferrer">
+          Visit 211.org
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cta-section">
+      <h2>Need Help With Housing Placement?</h2>
+
+      <p>
+        Contact Devine Living Solutions or submit a referral for review.
+      </p>
+
+      <div class="button-row">
+        <a class="button button-secondary" href="referral.html">
+          Submit a Referral
+        </a>
+
+        <a class="button button-primary" href="contact.html">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Devine Living Solutions</h3>
+
+      <p>
+        Supportive, all-inclusive, non-medical group housing for adults in
+        Columbia, South Carolina and surrounding communities.
+      </p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="demographics.html">Who We Serve</a>
+        <a href="our-care.html">Our Care</a>
+        <a href="faq.html">Frequently Asked Questions</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+
+      <div class="footer-links">
+        <a href="tel:18035001901">803-500-1901</a>
+
+        <a href="mailto:info@devinehousingsolutions.com">
+          info@devinehousingsolutions.com
+        </a>
+
+        <a href="referral.html">Submit a Referral</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; 2026 Devine Living Solutions. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
