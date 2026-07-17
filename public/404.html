@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Page Not Found | Devine Living Solutions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="The page you are looking for could not be found. Return to the Devine Living Solutions homepage or contact us for assistance."
+  >
+
+  <style>
+    :root{
+      --navy:#1C3F60;
+      --green:#3B7A57;
+      --gold:#FFD166;
+      --beige:#F9EFE4;
+      --white:#FFFFFF;
+      --text:#17324A;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--beige);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:2rem;
+    }
+
+    .card{
+      max-width:700px;
+      width:100%;
+      background:rgba(255,255,255,.95);
+      border-radius:14px;
+      padding:3rem;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+
+    img{
+      height:90px;
+      width:auto;
+      margin-bottom:1.5rem;
+    }
+
+    h1{
+      margin:0;
+      color:var(--green);
+      font-size:3rem;
+    }
+
+    p{
+      font-size:1.1rem;
+      line-height:1.7;
+      margin:1.5rem 0;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:2rem;
+    }
+
+    .button{
+      text-decoration:none;
+      padding:.9rem 1.5rem;
+      border-radius:8px;
+      font-weight:bold;
+      transition:.2s;
+    }
+
+    .primary{
+      background:var(--green);
+      color:white;
+    }
+
+    .primary:hover{
+      background:var(--gold);
+      color:var(--navy);
+    }
+
+    .secondary{
+      background:var(--navy);
+      color:white;
+    }
+
+    .secondary:hover{
+      background:var(--gold);
+      color:var(--navy);
+    }
+
+    @media(max-width:600px){
+      .card{
+        padding:2rem;
+      }
+
+      h1{
+        font-size:2.3rem;
+      }
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VE01S9Q42P');
+  </script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+  <img src="logo.png" alt="Devine Living Solutions Logo">
+
+  <h1>404</h1>
+
+  <p>
+    Sorry, the page you're looking for doesn't exist or may have been moved.
+  </p>
+
+  <p>
+    You can return to the homepage, browse our services, or contact us if you need assistance.
+  </p>
+
+  <div class="buttons">
+    <a class="button primary" href="index.html">Home</a>
+    <a class="button secondary" href="contact.html">Contact Us</a>
+  </div>
+
+</div>
+
+</body>
+</html>
